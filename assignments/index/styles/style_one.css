@@ -1,0 +1,19 @@
+h1 {
+    background-color: pink;
+    color: blue;
+    font-size: 100px;
+}
+
+p {
+    background-color: blueviolet;
+}
+
+.lina {
+    background-color: red;
+    font-size: 50px;
+}
+
+.blackbg {
+    background-color: black;
+    color: white;
+}
