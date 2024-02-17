@@ -1,0 +1,12 @@
+#lina::first-letter {
+    font-size: 200px;
+    color: palevioletred;
+    font-family: "Protest Riot", sans-serif;
+    ;
+
+}
+
+.first::first-letter {
+    font-size: 200px;
+    color: aquamarine;
+}

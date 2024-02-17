@@ -1,3 +1,19 @@
 .h1 {
     background-color: rgb(20%, 50%, 30%);
 }
+
+body {
+    background-image: url(./images/sidebar-1.jpg);
+
+    background-size: cover;
+    color: pink;
+}
+
+.bgcolor {
+    background-color: rgba(127, 237, 255, 0.1);
+}
+
+.bgpink,
+p {
+    background: linear-gradient(48deg, rgb(227, 13, 88) 15%, rgb(156, 43, 115) 64%)
+}
