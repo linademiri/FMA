@@ -5,9 +5,22 @@ tr:nth-child(odd) {
 
 tr:nth-child(1) {
     color: black;
+
+
 }
 
 tr:nth-child(even) {
     background-color: darkgreen;
     color: white;
+}
+
+td,
+th {
+    border-bottom: 1px solid white;
+
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
 }

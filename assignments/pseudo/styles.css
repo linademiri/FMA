@@ -1,0 +1,10 @@
+p:hover {
+    background-color: #ffc0cb;
+}
+
+
+
+p:hover::first-letter {
+    text-transform: capitalize;
+    font-size: 200px;
+}
