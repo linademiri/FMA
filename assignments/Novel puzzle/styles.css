@@ -1,12 +1,17 @@
-#lina::first-letter {
-    font-size: 200px;
-    color: palevioletred;
-    font-family: "Protest Riot", sans-serif;
-    ;
+.lina::first-letter {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 90px;
+    float: left;
+    text-decoration: orangered underline;
+    line-height: 0.9;
+
 
 }
 
-.first::first-letter {
-    font-size: 200px;
-    color: aquamarine;
+.upper {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 40px;
+    float: left;
+    line-height: 0.5;
+
 }
