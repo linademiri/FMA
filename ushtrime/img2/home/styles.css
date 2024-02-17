@@ -1,0 +1,24 @@
+h1:visited {
+    color: red;
+}
+
+h1::after {
+    content: '*';
+    color: coral;
+
+}
+
+h1::before {
+    content: '*';
+    color: rgb(241, 47, 131);
+
+}
+
+h1::first-letter {
+    background-color: darkgreen;
+
+}
+
+p::first-line {
+    color: red;
+}
