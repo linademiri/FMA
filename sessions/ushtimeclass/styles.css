@@ -1,0 +1,23 @@
+.lina:hover {
+    background-color: red;
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+    border: 100px pink;
+
+    .yellow:hover .p {
+        background-color: purple;
+    }
+
+    .p {
+        padding: 0 50px;
+    }
+
+    .he {
+
+        margin: 50px;
+    }
+
+    .p {}

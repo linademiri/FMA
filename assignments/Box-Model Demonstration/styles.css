@@ -1,0 +1,7 @@
+p {
+    width: 200px;
+    background-color: rgb(rgb(255, 0, 200), rgb(225, 37, 178), rgb(197, 153, 173));
+    padding: 20px;
+    border: 3px solid black;
+    margin: 50px;
+}

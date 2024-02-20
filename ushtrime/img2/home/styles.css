@@ -22,3 +22,32 @@ h1::first-letter {
 p::first-line {
     color: red;
 }
+
+.lina {
+    background: linear-gradient(to right, blue, pink);
+}
+
+.lina:hover::first-letter {
+    font-size: 200px;
+    text-transform: uppercase;
+    text-decoration: green underline;
+    text-align: center;
+    float: none;
+    color: rgb(206, 14, 146);
+}
+
+body {
+    background-image: url(../lina.jpg);
+
+}
+
+#arita:hover {
+    float: initial;
+    font-size: 200px;
+    color: palevioletred;
+    text-decoration: darkorchid;
+}
+
+#arita:visited {
+    color: yellow;
+}
