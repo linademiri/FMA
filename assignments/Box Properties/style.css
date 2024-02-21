@@ -1,0 +1,21 @@
+p {
+    border: solid;
+    background-color: pink;
+    height: 190px;
+    margin: auto;
+
+
+}
+
+.lina {
+    float: left;
+    border: solid black;
+    cursor: pointer;
+    width: 150px;
+    padding: 5px 5px;
+}
+
+p .lina:hover {
+    border: dotted red;
+    margin: 20px 20px;
+}
