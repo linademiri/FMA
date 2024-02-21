@@ -1,0 +1,45 @@
+body {
+    margin: 0px;
+}
+
+.grey {
+
+
+
+    height: 25vh;
+    background-color: rgb(0, 0, 0);
+
+    color: white;
+    font-size: 1.5em;
+
+}
+
+.white {
+
+    height: 25vh;
+    background-color: rgb(244, 244, 244);
+
+    font-size: 1.5em;
+
+
+
+}
+
+.hr .white h1 {
+    text-decoration: underline black;
+}
+
+.hr .grey h1 {
+    text-decoration: underline white;
+}
+
+.hr h1 {
+    margin: 0px;
+    font-size: 2em;
+}
+
+hr {
+    width: 33%;
+    border: 10px solid red;
+
+}
