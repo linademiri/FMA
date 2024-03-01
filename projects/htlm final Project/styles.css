@@ -4,7 +4,6 @@
 
 }
 
-
 .dInline {
     display: inline;
     margin: 0 20px;
@@ -20,7 +19,7 @@
 }
 
 body {
-    cursor: url(./img/Rocket.png) 1 1, default;
+    cursor: url(rocket.png) 1 1, pointer;
     padding: 20px 100px;
     background-image: url(./img/babyblue.jpg);
     background-size: cover;
@@ -41,6 +40,12 @@ li,
 a {
     list-style: none;
     text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    color: black;
 }
 
 /* main */
@@ -123,8 +128,11 @@ table {
 
 th {
     background-color: purple;
+    color: black;
 }
 
 td {
     background-color: rgb(173, 23, 173);
+    text-decoration: underline black;
+    color: black;
 }
