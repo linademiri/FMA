@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.dInline {
+    display: inline;
+    margin: 0 20px;
+}
+
+/*Header*/
+.headerButtons {
+    display: inline;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+
+}
+
+body {
+    cursor: url(./img/Rocket.png) 1 1, default;
+    padding: 20px 100px;
+    background-image: url(./img/babyblue.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+/* globa */
+hr {
+    border: 1px solid black;
+    margin: 15px 100px;
+}
+
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* main */
+.bgaqua {
+    background-color: rgb(24, 156, 156);
+}
+
+.bgaqua:hover {
+    background-color: rgb(110, 110, 191);
+    border: 3px solid black;
+}
+
+.bgOrchid {
+    background-color: orchid;
+}
+
+.bgOrchid:hover {
+    background-color: rgb(206, 22, 200);
+    border: 3px solid black;
+}
+
+.bgBlue {
+    background-color: blue;
+}
+
+.bgBlue:hover {
+    background-color: rgb(113, 113, 208);
+    border: 3px solid black;
+}
+
+.bgPurple {
+    background-color: purple;
+}
+
+.bgPurple:hover {
+    background-color: rgb(185, 71, 185);
+    border: 3px solid black;
+}
+
+.bgGrey {
+    background-color: rgb(72, 63, 63);
+}
+
+.textWhite {
+    color: white;
+}
+
+.card {
+    border: 2px solid transparent;
+    border-radius: 15px;
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+}
+
+.card2 {
+    border: 2px solid transparent;
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    padding: 20px 0;
+}
+
+table {
+    border-collapse: collapse;
+    border: black;
+    text-align: center;
+    width: 50%;
+    margin: 20px 20px;
+    padding: 20px 20px;
+
+}
+
+.borderwh {
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+    margin: 20px;
+}
+
+th {
+    background-color: purple;
+}
+
+td {
+    background-color: rgb(173, 23, 173);
+}

@@ -3,20 +3,25 @@
 
 <head>
     <title>home</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-    <header>
+    <header class="headerButtons">
         <h1>Personal Portfolio</h1>
 
-        <hr>
-        <ul>
+        <hr class="dInline">
+        <ul class="textCenter ">
+
             <nav>
 
-            <li> <a href="./myProject.html"> My Project &#128640; </a></li>
-            <li> <a href="./contactMe.html"> contact Me  &#128153;</a></li>
-           
-        </nav>
+                <li class="card dInline bgBlue "> <a class="textWhite" href="./myProject.html"> My Project &#128640;
+                    </a>
+                </li>
+                <li class="card dInline bgBlue"> <a class="textWhite" href="./contactMe.html"> contact Me &#128153;</a>
+                </li>
+
+            </nav>
 
         </ul>
     </header>
@@ -24,7 +29,7 @@
     <hr>
 
     <main>
-        <section>
+        <section class="card bgaqua">
             <h1>Who is <u>Lina Demiri?</u></h1>
 
             <article>
@@ -37,22 +42,25 @@
             </article>
         </section>
         <hr>
-        <section>
+        <section class="card bgOrchid">
             <h3>Education</h3>
             <article>
                 <ul>
-                    <li>Primary School :</li>
-                    <ul>
-                        <li><b>thimi mitko (2013) </b></li>
-                    </ul>
+                    <ul class="borderwh">
+                        <li>Primary School :</li>
 
-                    <li>High school: </li>
-                    <ul>
+                        <li><b>thimi mitko (2013) </b></li>
+
+                    </ul>
+                    <ul class="borderwh">
+                        <li>High school: </li>
+
                         <li><b>Xhavit Ahmeti(shkenca natyrore) </b></li>
                     </ul>
 
-                    <li> University :</li>
-                    <ul>
+                    <ul class="borderwh">
+                        <li> University :</li>
+
                         <li> <b>Ubt (Shkenca kompjuterike dhe inxhinjeri) </b></li>
                     </ul>
                 </ul>
@@ -61,7 +69,7 @@
             </article>
         </section>
         <hr>
-        <section>
+        <section class="card bgBlue">
             <h1>My skills</h1>
             <article>
                 <table border="2">
@@ -88,7 +96,7 @@
             </article>
         </section>
         <hr>
-        <section>
+        <section class="card bgPurple">
             <h1>My Project</h1>
             <article>
                 <ol>
@@ -101,7 +109,8 @@
         </section>
         <hr>
     </main>
-    <footer>
+
+    <footer class="card2  bgGrey">
         <p> All rights reserved Line Demiri &#169; </p>
     </footer>
 
