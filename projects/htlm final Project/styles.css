@@ -19,7 +19,7 @@
 }
 
 body {
-    cursor: url(rocket.png) 1 1, pointer;
+    cursor: url(./img/rocket\ \(1\).png) 1 1, pointer;
     padding: 20px 100px;
     background-image: url(./img/babyblue.jpg);
     background-size: cover;
@@ -35,6 +35,8 @@ hr {
     border: 1px solid black;
     margin: 15px 100px;
 }
+
+
 
 li,
 a {
@@ -99,6 +101,7 @@ h3 {
     width: 90%;
     margin: 0 auto;
     color: white;
+
 }
 
 .card2 {
