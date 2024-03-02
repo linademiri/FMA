@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(219, 181, 187);
+    background-color: rgb(197, 180, 183);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +17,7 @@ body {
     border: 2px solid black;
     width: 270px;
     height: 200px;
-    background-color: rgb(236, 236, 141);
+    background-color: rgb(223, 223, 149);
     display: flex;
     gap: 20px;
     flex-direction: column;
