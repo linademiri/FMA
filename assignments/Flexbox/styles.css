@@ -13,6 +13,7 @@
     flex-direction: row;
     gap: 1em;
     flex-wrap: wrap;
+
 }
 
 .flex-child {
