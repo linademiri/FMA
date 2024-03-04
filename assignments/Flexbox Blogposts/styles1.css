@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/*global*/
+a {
+    text-decoration: none;
+    color: rgb(0, 66, 231);
+}
+
+.fontSize7 {
+    font-size: 0.7rem;
+}
+
+.fontSize2 {
+    font-size: 2.3rem;
+}
+
+.white {
+    color: white;
+
+}
+
+.align {
+    align-self: flex-start;
+}
+
+.margin20 {
+    margin: 10px
+}
+
+.gray {
+    color: gray;
+}
+
+.aside {
+    background-color: rgb(48, 48, 171);
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.bgdark {
+    border: 1px solid white;
+    color: white;
+    background-color: rgb(48, 48, 171);
+    padding: 5px;
+
+}
+
+.bgGreen {
+    border: transparent;
+    background-color: green;
+}
+
+.bgBlue {
+    border: transparent;
+    background-color: rgb(15, 15, 182);
+
+}
+
+.bgRed {
+    border: transparent;
+    background-color: red;
+}
+
+/*main*/
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Fira Sans", sans-serif;
+
+}
+
+.contentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100rem;
+    padding: 20px;
+
+}
+
+img {
+    margin: 0.5em 0 0.5em 1em;
+    width: 3.8em;
+    border-radius: 100%;
+    /*position: absolute;
+    right: 0;*/
+
+}
+
+.asideContainer {
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    justify-content: center;
+    margin: 20px;
+}
