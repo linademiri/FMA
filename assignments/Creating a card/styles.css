@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.card {
+
+    box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.568);
+    display: flex;
+    flex-wrap: wrap;
+    border: 10px solid black;
+    width: 20vw;
+    height: 95vh;
+}
+
+.card-price {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    width: 130px;
+    height: 130px;
+}
+
+.card-date {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 130px;
+    height: 130px;
+    font-size: 20px;
+}
+
+.card-copyright {
+    background-image: url(./img/sp.jpg);
+    background-size: cover;
+    color: white;
+    font-size: 10px;
+    width: 20vw;
+    height: 77vh;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+
+}
+
+.card-price,
+.card-data {
+    border-right: 2px solid rgb(0, 0, 0);
+
+}
