@@ -18,6 +18,10 @@ a {
     font-size: 2.3rem;
 }
 
+.fontSize {
+    font-size: 1.2rem;
+}
+
 .white {
     color: white;
 
@@ -25,6 +29,10 @@ a {
 
 .padding {
     padding: 5px;
+}
+
+.paddingY20 {
+    padding-top: 20px;
 }
 
 .align {
@@ -44,6 +52,8 @@ a {
     color: white;
     background-color: rgb(48, 48, 171);
     padding: 5px;
+    width: 80px;
+    height: 30px;
 }
 
 .bgGreen {
@@ -64,6 +74,13 @@ a {
 .spaceBetween {
     display: flex;
     justify-content: space-between;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    flex-wrap: wrap;
 }
 
 /*main*/
@@ -98,6 +115,12 @@ img {
     align-items: end;
     justify-content: end;
     gap: 10px;
+}
+
+.end {
+    display: flex;
+    align-items: start;
+    justify-content: start;
 }
 
 .aside {
