@@ -4,21 +4,18 @@
 }
 
 body {
-
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
 
 .card {
-
     box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.568);
     display: flex;
     flex-wrap: wrap;
     border: 10px solid black;
-    width: 20vw;
-    height: 95vh;
+    width: 500px;
+    /* height: 95vh; */
 }
 
 .card-price {
@@ -47,6 +44,7 @@ body {
 }
 
 .card-copyright {
+
     background-image: url(./img/sp.jpg);
     background-size: cover;
     color: white;
@@ -56,6 +54,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-grow: 2;
+    padding: 20px;
 
 }
 

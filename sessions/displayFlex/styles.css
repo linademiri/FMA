@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100px;
+
+}
+
+body {
+    padding: 20px;
+}
+
+.bgBlue {
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
