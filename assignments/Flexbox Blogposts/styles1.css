@@ -44,7 +44,6 @@ a {
     color: white;
     background-color: rgb(48, 48, 171);
     padding: 5px;
-
 }
 
 .bgGreen {
@@ -55,7 +54,6 @@ a {
 .bgBlue {
     border: transparent;
     background-color: rgb(15, 15, 182);
-
 }
 
 .bgRed {
@@ -77,9 +75,7 @@ body {
     font-size: 25px;
 }
 
-main {
-    padding: 100px;
-}
+
 
 .contentContainer {
     display: flex;
@@ -102,7 +98,6 @@ img {
     align-items: end;
     justify-content: end;
     gap: 10px;
-
 }
 
 .aside {
@@ -111,9 +106,6 @@ img {
     height: 100vh;
     display: flex;
     font-size: 20px;
-
-
-
 }
 
 .asideContainer {

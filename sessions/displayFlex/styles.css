@@ -5,12 +5,16 @@
 
 main {
     height: 100px;
+    padding: 20px;
 
 }
 
 body {
     padding: 20px;
+    height: 100vh;
+
 }
+
 
 .bgBlue {
     background-color: blue;
@@ -18,4 +22,38 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    padding: 20px;
+    align-items: center;
+}
+
+.bgOrange {
+    border: 1px solid orange;
+    background-color: orange;
+    color: white;
+}
+
+.dFelx {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.displayFlex {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+img {
+    margin: 0.5em 0 0.5em 1em;
+    width: 3.8em;
+    border-radius: 100%;
+}
+
+.border {
+    border: 1px solid black;
+
+
+
 }
