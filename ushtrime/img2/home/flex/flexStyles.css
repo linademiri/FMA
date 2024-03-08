@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    border: 10px solid black;
+    height: 90vh;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    column-gap: 1em;
+    row-gap: 1em;
+
+
+}
+
+.box {
+
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+
+.box1 {
+    background-color: rgb(255, 0, 123);
+
+}
+
+.box2 {
+    background-color: rgb(211, 216, 112);
+}
+
+.box3 {
+    background-color: rgba(0, 128, 4, 0.622);
+}
+
+.box4 {
+    background-color: rgb(43, 137, 226);
+}

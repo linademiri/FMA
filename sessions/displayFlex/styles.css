@@ -11,7 +11,7 @@ main {
 
 body {
     padding: 20px;
-    height: 100vh;
+
 
 }
 
@@ -32,9 +32,13 @@ body {
     color: white;
 }
 
+.width500 {
+    width: 25%;
+}
+
 .dFelx {
     display: flex;
-    flex-direction: row;
+
 }
 
 .displayFlex {
@@ -51,7 +55,4 @@ img {
 
 .border {
     border: 1px solid black;
-
-
-
 }
