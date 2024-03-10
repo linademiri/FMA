@@ -8,6 +8,7 @@ body {
     padding: 20px;
 
 
+
 }
 
 .card {
@@ -98,6 +99,7 @@ img {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.095);
     width: 30vw;
     margin: 5px;
+    border-radius: 5px;
 }
 
 .dFlex {
