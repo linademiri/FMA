@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+
+}
+
+header {
+    background-color: pink;
+    padding: 1em;
+}
+
+aside {
+    background-color: plum;
+    padding: 1em;
+}
+
+main {
+    background-color: lawngreen;
+    padding: 1em;
+}
+
+footer {
+    background-color: rgb(62, 0, 128);
+    padding: 1em;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+
+}
