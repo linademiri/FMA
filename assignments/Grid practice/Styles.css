@@ -14,8 +14,13 @@ body {
     background-color: pink;
 }
 
-main {
+div {
     background-color: aqua;
+}
+
+main {
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    display: grid;
+    column-gap: 50px;
+
 }
