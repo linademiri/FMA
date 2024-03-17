@@ -7,10 +7,11 @@ body {
     display: grid;
     grid-template-rows: 10% 1fr 10%;
     height: 100vh;
-    gap: 20px;
+    gap: 10px;
     text-align: center;
     color: white;
-    padding: 10px;
+
+
 }
 
 header {
@@ -18,9 +19,16 @@ header {
     border: 5px solid black;
 }
 
+/* aside */
 aside {
     background-color: rgb(89, 216, 216);
     border: 5px solid black;
+}
+
+.aside1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(6, 102, 102);
 }
 
 .bgBlue {
@@ -41,28 +49,44 @@ aside {
 footer {
     background-color: rgb(16, 19, 189);
     border: 5px solid black;
+
 }
 
 div {
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 20px;
+    gap: 10px;
 
 }
 
+/* main */
 main {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    gap: 20px;
+    gap: 10px;
+
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 10px;
 }
 
 .container1 {
     display: grid;
-    gap: 20px;
+    gap: 10px;
+}
+
+main:hover .bgBlue {
+    background-color: rgb(6, 6, 73);
+}
+
+.position {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    height: 80px;
+    width: 80px;
+    background-color: aqua;
 }
