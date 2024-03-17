@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* global */
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.fSize {
+    font-size: 50px;
+}
+
+.colorO {
+    color: orangered;
+}
+
+.valign {
+    vertical-align: bottom;
+}
+
+.padding {
+    padding: 10px;
+}
+
+.bgOrange {
+    background-color: orangered;
+    color: white;
+    border-radius: 3px;
+    margin-left: -10px;
+}
+
+.borderOrange {
+    border: 1px solid orangered;
+    background-color: transparent;
+    border-radius: 3px;
+}
+
+body {
+    background-image: url(./img/th.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 20px;
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* main */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.button {
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: transparent;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgba(0, 0, 0, 0.608);
+    height: 500px;
+    width: 400px;
+    border-radius: 3px;
+}
+
+.LoginButton {
+    color: orangered;
+    background-color: white;
+    border-radius: 4px;
+    display: block;
+
+}
