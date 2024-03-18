@@ -6,18 +6,20 @@
 .yellow {
     background-color: yellow;
     border: 100px pink;
+}
 
-    .yellow:hover .p {
-        background-color: purple;
-    }
 
-    .p {
-        padding: 0 50px;
-    }
+.yellow:hover .p {
+    background-color: purple;
+}
 
-    .he {
+.p {
+    padding: 0 50px;
+}
 
-        margin: 50px;
-    }
+.he {
 
-    .p {}
+    margin: 50px;
+}
+
+.p {}
