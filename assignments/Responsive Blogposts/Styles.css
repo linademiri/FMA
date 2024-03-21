@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/*global*/
+a {
+    text-decoration: none;
+    color: rgb(0, 66, 231);
+}
+
+.fontSize7 {
+    font-size: 0.7rem;
+}
+
+.fontSize2 {
+    font-size: 2.3rem;
+}
+
+.fontSize {
+    font-size: 1.3rem;
+}
+
+.white {
+    color: white;
+
+}
+
+.padding {
+    padding: 5px;
+}
+
+.paddingY20 {
+    padding-top: max(1rem, 20px);
+}
+
+
+.align {
+    align-self: flex-start;
+}
+
+.margin20 {
+    margin: 1rem;
+}
+
+.gray {
+    color: gray;
+}
+
+.bgdark {
+    border: 1px solid gray;
+    color: white;
+    background-color: rgb(48, 48, 171);
+    padding: minmax(5px, 1rem);
+    width: 5vw;
+    height: 5vh;
+}
+
+.bgGreen {
+    border: transparent;
+    background-color: green;
+}
+
+.bgBlue {
+    border: transparent;
+    background-color: rgb(15, 15, 182);
+}
+
+.bgRed {
+    border: transparent;
+    background-color: red;
+}
+
+.spaceBetween {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.display {
+    display: grid;
+}
+
+/*main*/
+body {
+    display: grid;
+    gap: 20px;
+    height: 100vh;
+    grid-template-columns: 20rem auto;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.8rem;
+}
+
+.contentContainer {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+img {
+    margin: 0.5em 0 0.5em 1em;
+    width: 3.8em;
+    border-radius: 100%;
+}
+
+.aside {
+    background-color: rgb(48, 48, 171);
+    display: grid;
+    font-size: 2rem;
+    place-content: center;
+}
+
+.asideContainer {
+    display: grid;
+    grid-template-rows: auto;
+    text-align: end;
+}

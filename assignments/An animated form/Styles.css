@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    height: 300px;
+    width: 300px;
+    background-color: gray;
+    position: relative;
+    padding: 20px;
+}
+
+input {
+    padding: 10px;
+}
+
+button {
+    position: absolute;
+    padding: 10px;
+}
