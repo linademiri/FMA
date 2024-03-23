@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    height: 100vh;
+}
+
+/* aside */
+aside {
+    background-image: url(./images\ CSS/sidebar-2.jpg);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.56);
+    background-blend-mode: color;
+    padding: 1rem;
+
+}
+
+div {
+    background-color: gray;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+section {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto 1fr auto;
+    margin: 0.5rem;
+}
+
+.aDashbord {
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px 0;
+
+}
+
+section:hover:not(.aSection, .aTitle, .aDashbord) {
+    background-color: rgba(0, 0, 0, 0.411);
+}
