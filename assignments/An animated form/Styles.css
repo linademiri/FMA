@@ -27,11 +27,8 @@ form {
 .button {
     display: grid;
     grid-template-columns: 1fr;
-    height: 300px;
-    width: 300px;
-    background-color: gray;
-    padding: 40px;
 }
+
 
 .buttonCard {
 
@@ -48,7 +45,7 @@ input {
 
 .pCard {
     color: gray;
-    font-size: 0.5rem;
+    font-size: 1rem;
     margin: 10px;
 
 }
@@ -60,9 +57,10 @@ input {
 }
 
 
-.animationFName:focus+.animationFName,
-.animationFName:focus+.animationLName,
-.animationEmail:focus+.animationEmail {
+
+.animatedFName:focus+.animationFName,
+.animatedFName:focus+.animationLName,
+.animatedEmail:focus+.animationEmail {
     opacity: 0;
     animation: fadeIn .5s ease-in-out forwards;
 }
