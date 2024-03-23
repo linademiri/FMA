@@ -3,19 +3,100 @@
     padding: 0;
 }
 
+/* body */
+body {
+    background-color: rgb(178, 178, 182);
+    margin: 50px;
+}
+
+.aName {
+    padding: 10px;
+    outline: none;
+    border: 3px solid transparent;
+    width: 90%;
+}
+
+.aName:focus {
+    border: 2px solid blue;
+}
+
+form {
+    width: 30vw;
+}
+
 .button {
+    display: grid;
+    grid-template-columns: 1fr;
     height: 300px;
     width: 300px;
     background-color: gray;
-    position: relative;
-    padding: 20px;
+    padding: 40px;
+}
+
+.buttonCard {
+
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    padding: 0.4rem;
+
 }
 
 input {
     padding: 10px;
 }
 
-button {
-    position: absolute;
-    padding: 10px;
+.pCard {
+    color: gray;
+    font-size: 0.5rem;
+    margin: 10px;
+
+}
+
+.animationFName,
+.animationLName,
+.animationEmail {
+    opacity: 0;
+}
+
+
+.animationFName:focus+.animationFName,
+.animationFName:focus+.animationLName,
+.animationEmail:focus+.animationEmail {
+    opacity: 0;
+    animation: fadeIn .5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* button  */
+div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.svg {
+    width: 40px;
+    animation: spin 0.4s infinite;
+
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }

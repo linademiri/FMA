@@ -5,21 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>An animated form</title>
+
     <link rel="stylesheet" href="Styles.css">
 </head>
 
 <body>
     <main>
         <form action="" class="button">
-            <input class="aName" type="text" placeholder="First Name">
-            <p class="pAnimated">*Enter a valid name</p>
-            <input type="text" placeholder="Last Name">
-            <p class="pAnimated">*Enter a valid last name</p>
-            <input type="email" placeholder="Email">
-            <p class="pAnimated">*Your email should be a Gmail domain</p>
-            <button>Submit</button>
+            <input class="aName animationFName " type="text" placeholder="First Name">
+            <p class=" pCard animationFName ">*Enter a valid name</p>
+            <input class=" aName animationLName " type="text" placeholder="Last Name">
+            <p class=" pCard animationLName ">*Enter a valid last name</p>
+            <input class=" aName animationEmail " type="email" placeholder="Email">
+            <p class=" pCard animationEmail ">* Your email should be a Gmail domain</p>
+            <div>
+                <button class="buttonCard">Submit</button>
+                <img class="svg" src="./img/icons8-loading-sign-50.png" alt="spin">
+            </div>
         </form>
     </main>
 </body>
-
-</html>
