@@ -3,41 +3,31 @@
     padding: 0;
 }
 
-a,
-li {
-    list-style: none;
-    text-decoration: none;
-}
-
 /* global */
 .icons {
     width: 25px;
     height: 25px;
 }
 
-.dFlex {
-    display: flex;
+.positionXY {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px;
 }
 
 .position {
     position: relative;
 }
 
-.positionXY {
-    position: absolute;
-    top: -15px;
-    right: -15px;
-}
-
-
-
-
 body {
     display: grid;
     grid-template-columns: auto 1fr;
     height: 100vh;
+    background-color: rgb(221, 221, 227);
 
 }
+
 
 /* aside */
 aside {
@@ -71,46 +61,33 @@ img {
     background-color: rgba(0, 0, 0, 0.401);
 }
 
-/* div */
-.conteiner {
-    background-color: rgb(214, 214, 219);
-    padding: 10px;
+.container {
+    padding: 1rem;
 }
 
 /* header */
 header {
     display: grid;
     grid-template-columns: 1fr auto;
-    margin: 5px 0;
+
 }
 
-input {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    overflow: hidden;
-}
-
-ul {
+.container1 {
     display: flex;
-    gap: 20px;
+    gap: 15px;
+
 }
 
 .dots {
     background-color: white;
     border-radius: 50%;
-    margin: 10px;
-    padding: 5px;
-}
-
-.dotsHover:hover {
-    box-shadow: 10px 10px 10px rgba(82, 82, 82, 0.166);
+    padding: 2px;
 }
 
 .buttonRed {
     position: absolute;
-    top: -1px;
-    right: -5px;
+    top: -2px;
+    right: -2px;
     background-color: red;
     border: transparent;
     height: 13px;
@@ -118,10 +95,9 @@ ul {
     border-radius: 50%;
 }
 
-/*main */
-main {
-    background-color: white;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
+input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    overflow: hidden;
 }
