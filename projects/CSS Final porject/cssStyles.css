@@ -9,6 +9,16 @@
     height: 25px;
 }
 
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.positionA {
+    position: absolute;
+}
+
 .positionXY {
     position: absolute;
     top: -10px;
@@ -16,7 +26,7 @@
     padding: 5px;
 }
 
-.position {
+.positionR {
     position: relative;
 }
 
@@ -25,17 +35,17 @@ body {
     grid-template-columns: auto 1fr;
     height: 100vh;
     background-color: rgb(221, 221, 227);
-
 }
-
 
 /* aside */
 aside {
-    background-image: url(sidebar-2.jpg);
+    background-image: url(images/images/sidebar-2.jpg);
     color: white;
     background-color: rgba(0, 0, 0, 0.899);
     background-blend-mode: color;
     padding: 1rem;
+    overflow-y: scroll;
+    /* font-size: 0.7rem; */
 }
 
 img {
@@ -67,14 +77,15 @@ img {
 
 /* header */
 header {
-    display: grid;
-    grid-template-columns: 1fr auto;
-
+    padding: 10px;
+    display: flex;
+    justify-content: space-between
 }
 
 .container1 {
     display: flex;
-    gap: 15px;
+    align-items: center;
+    gap: 1rem;
 
 }
 
@@ -99,5 +110,39 @@ input {
     border: none;
     outline: none;
     background-color: transparent;
-    overflow: hidden;
+    border-bottom: 2px solid gray;
+}
+
+input:focus {
+    border-bottom: 2px solid purple;
+}
+
+.shadow:hover {
+    box-shadow: 9px 10px 10px rgba(82, 82, 82, 0.166);
+}
+
+.pTransition {
+    display: none;
+    transition: display .9s;
+}
+
+a:hover+.pTransition,
+.positionR:hover .listTransition {
+    display: block;
+}
+
+.bgGray {
+    background-color: rgba(0, 0, 0, 0.379);
+    color: white;
+}
+
+.listTransition {
+    right: 5px;
+    top: 10px;
+    width: 12rem;
+    background-color: white;
+}
+
+.transitionBgRed:hover {
+    background-color: red;
 }
