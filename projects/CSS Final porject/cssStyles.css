@@ -57,16 +57,16 @@ li {
     padding: 10px;
 }
 
-.paddingtop {
-    padding-top: 40px;
-}
-
 .marginY100 {
     margin: 0 100px;
 }
 
-.marginTop50 {
-    margin-top: 50px;
+.marginTop80 {
+    margin-top: 80px;
+}
+
+.marginTop10 {
+    margin-top: 10px;
 }
 
 .aitems {
@@ -138,19 +138,20 @@ li {
 }
 
 .card3Img {
-    top: -90px;
-    right: 12px;
+    top: -110px;
+    right: 19px;
     transition: top .6s ease;
 }
 
 .transitionCard:hover .card3Img {
-    top: -90px;
+    top: -150px;
 }
 
-/* /* body * */
+/*body  */
 body {
     grid-template-columns: auto 1fr;
     background-color: rgb(221, 221, 227);
+    font-family: "Roboto", sans-serif;
 }
 
 /* aside */
