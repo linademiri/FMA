@@ -19,36 +19,154 @@ li {
     position: absolute;
 }
 
-.positionXY {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    padding: 5px;
-}
-
 .positionR {
     position: relative;
 }
 
-body {
+.positionXY {
+    top: -30px;
+    left: 10px;
+    padding: 5px;
+}
+
+.dFlex {
+    display: flex;
+}
+
+.dGrid {
     display: grid;
+}
+
+.auto-fr {
     grid-template-columns: auto 1fr;
-    height: 100vh;
+}
+
+.fr-fr {
+    grid-template-columns: 1fr 1fr;
+}
+
+.columnGap {
+    column-gap: 30px;
+}
+
+.rowGap {
+    row-gap: 30px;
+}
+
+.padding10 {
+    padding: 10px;
+}
+
+.paddingtop {
+    padding-top: 40px;
+}
+
+.marginY100 {
+    margin: 0 100px;
+}
+
+.marginTop50 {
+    margin-top: 50px;
+}
+
+.aitems {
+    align-items: center;
+}
+
+.gap2 {
+    gap: 2rem;
+}
+
+.bradius {
+    border-radius: 1rem;
+}
+
+.bradius5 {
+    border-radius: 5px;
+}
+
+.bgWhite {
+    background-color: white;
+}
+
+.bgGreen {
+    background-color: green;
+}
+
+.bgRed {
+    background-color: rgb(255, 85, 0);
+}
+
+.bgPink {
+    background-color: rgb(221, 15, 84);
+}
+
+.bgBlue {
+    background-color: rgb(59, 59, 188);
+}
+
+.boxShadow {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15)
+}
+
+.colorGray {
+    color: gray;
+}
+
+.colorWhite {
+    color: white;
+}
+
+.fSize {
+    font-size: 1.4rem;
+}
+
+.jEnd {
+    justify-content: end;
+}
+
+.jSpaceBetween {
+    justify-content: space-between;
+}
+
+.textAlign {
+    text-align: center;
+}
+
+.image {
+    width: 22vw;
+}
+
+.card3Img {
+    top: -90px;
+    right: 12px;
+    transition: top .6s ease;
+}
+
+.transitionCard:hover .card3Img {
+    top: -90px;
+}
+
+/* /* body * */
+body {
+    grid-template-columns: auto 1fr;
     background-color: rgb(221, 221, 227);
 }
 
 /* aside */
 aside {
     background-image: url(images/images/sidebar-2.jpg);
-    color: white;
     background-color: rgba(0, 0, 0, 0.899);
+    background-position: center;
     background-blend-mode: color;
     padding: 1rem;
-    overflow-y: scroll;
-    /* font-size: 0.7rem; */
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    text-align: center;
 }
 
-img {
+.img50 {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -61,7 +179,6 @@ img {
 }
 
 .aStyle {
-    display: grid;
     gap: 1rem;
     grid-template-columns: auto 1fr auto;
     margin: 0.5rem;
@@ -71,22 +188,17 @@ img {
     background-color: rgba(0, 0, 0, 0.401);
 }
 
+/* header */
 .container {
     padding: 1rem;
-}
-
-/* header */
-header {
-    padding: 10px;
-    display: flex;
-    justify-content: space-between
+    flex: 1;
+    overflow-y: auto;
 }
 
 .container1 {
     display: flex;
     align-items: center;
     gap: 1rem;
-
 }
 
 .dots {
@@ -96,7 +208,6 @@ header {
 }
 
 .buttonRed {
-    position: absolute;
     top: -2px;
     right: -2px;
     background-color: red;
@@ -104,6 +215,7 @@ header {
     height: 13px;
     width: 13px;
     border-radius: 50%;
+    border: 1px solid white;
 }
 
 input {
@@ -118,7 +230,7 @@ input:focus {
 }
 
 .shadow:hover {
-    box-shadow: 9px 10px 10px rgba(82, 82, 82, 0.166);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15)
 }
 
 .pTransition {
@@ -126,7 +238,7 @@ input:focus {
     transition: display .9s;
 }
 
-a:hover+.pTransition,
+a:hover,
 .positionR:hover .listTransition {
     display: block;
 }
@@ -145,4 +257,13 @@ a:hover+.pTransition,
 
 .transitionBgRed:hover {
     background-color: red;
+}
+
+/* main */
+main {
+    padding: 40px;
+}
+
+.iconBox {
+    padding: 25px;
 }

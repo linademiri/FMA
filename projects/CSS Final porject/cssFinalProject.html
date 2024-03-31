@@ -8,35 +8,35 @@
     <link rel="stylesheet" href="./cssStyles.css">
 </head>
 
-<body>
-    <aside>
-        <section class="aTitle aStyle">
+<body class="dGrid">
+    <aside class="colorWhite">
+        <section class="aTitle aStyle dGrid">
 
             <h1> CP</h1>
             <h1> COOL PAGE</h1>
 
         </section>
         <hr>
-        <section class="aSection aStyle">
+        <section class="aSection aStyle dGrid">
             <figure>
-                <img src="./assets/images/avatar.jpg" alt="avatar">
+                <img class="img50 " src="./assets/images/avatar.jpg" alt="avatar">
             </figure>
             <h1>John Doc</h1>
             <figure> <img src="./assets/icons/asides/expandMore.svg" alt="arrow"></figure>
         </section>
         <hr>
-        <section class="aDashbord aStyle">
+        <section class="aDashbord aStyle dGrid">
             <figure><img src="./assets/icons/asides/asideDashboard.svg" alt=""></figure>
             <h1>Dashboard</h1>
         </section>
-        <section class="aStyle">
+        <section class="aStyle  dGrid">
             <figure>
                 <img src="./assets/icons/asides/pages.svg" alt="">
             </figure>
             <h1>Pages</h1>
             <figure> <img src="./assets/icons/asides/expandMore.svg" alt="arrow"></figure>
         </section>
-        <section class="aStyle">
+        <section class="aStyle dGrid">
 
             <figure>
                 <img src="./assets/icons/asides/components.svg" alt="">
@@ -44,7 +44,7 @@
             <h1>Components</h1>
             <figure> <img src="./assets/icons/asides/expandMore.svg" alt="arrow"></figure>
         </section>
-        <section class="aStyle">
+        <section class="aStyle dGrid">
 
             <figure>
                 <img src="./assets/icons/asides/form.svg" alt="">
@@ -52,17 +52,15 @@
             <h1>Forms</h1>
             <figure> <img src="./assets/icons/asides/expandMore.svg" alt="arrow"></figure>
         </section>
-        <section class="aStyle">
+        <section class="aStyle dGrid">
 
             <figure>
                 <img src="./assets/icons/asides/table.svg" alt="">
             </figure>
             <h1>Tables</h1>
             <figure> <img src="./assets/icons/asides/expandMore.svg" alt="arrow"></figure>
-
-
         </section>
-        <section class="aStyle">
+        <section class="aStyle dGrid">
             <h1>
                 <figure>
                     <img src="./assets/icons/asides/map.svg" alt="">
@@ -71,7 +69,7 @@
                 <figure> <img src="./assets/icons/asides/expandMore.svg" alt="arrow"></figure>
             </h1>
         </section>
-        <section class="aStyle">
+        <section class="aStyle dGrid">
             <h1>
                 <figure>
                     <img src="./assets/icons/asides/widget.svg" alt="">
@@ -80,7 +78,7 @@
                 <figure> <img src="./assets/icons/asides/expandMore.svg" alt="arrow"></figure>
             </h1>
         </section>
-        <section class="aStyle">
+        <section class="aStyle dGrid">
             <h1>
                 <figure>
                     <img src="./assets/icons/asides/chart.svg" alt="">
@@ -90,7 +88,7 @@
 
             </h1>
         </section>
-        <section class="aStyle">
+        <section class="aStyle dGrid">
             <h1>
                 <figure>
                     <img src="./assets/icons/asides/calendar.svg" alt="">
@@ -99,37 +97,34 @@
                 <figure> <img src="./assets/icons/asides/expandMore.svg" alt="arrow"></figure>
             </h1>
         </section>
-
     </aside>
     <div class="container">
-        <header>
-            <section class="container1 figureAnimated">
-                <figure><a href=""><img title="See more" class="dots icons shadow "
-                            src="./icons/icons8-menu-vertical-25.png" alt="">
+        <header class="padding10 dFlex jSpaceBetween">
+            <section class="container1 ">
+                <figure><a href=""><img title="See more" class="dots icons shadow " src="./assets/icons/header/more.svg"
+                            alt="">
                     </a>
-                    <!-- <p class="bgGray pTransition positionA">See more</p> -->
                 </figure>
                 <p>Dashboard</p>
             </section>
             <section class="container1">
-                <input type="text" placeholder="Search">
-                <label for="text">
-                    <figure class=" ">
-                        <a href=""><img class=" dots icons shadow" src="./icons/icons8-search-30.png" alt=""></a>
-                    </figure>
-                </label>
+                <form action="" class="dFlex">
+                    <input type="text" placeholder="Search" id="Search">
+                    <label for="Search">
+                        <figure class=" ">
+                            <img class=" dots icons shadow" src="./assets/icons/header/search.svg" alt="">
+                        </figure>
+                    </label>
+                </form>
 
-                <figure class="figureAnimated">
+                <figure>
                     <a href=""><img title="Dashboard" class="icons" src="./assets/icons/header/headerDashboard.svg"
                             alt=""></a>
-                    <!-- <p class="bgGray pTransition positionA">Dashboard</p> -->
                 </figure>
                 <div class="positionR">
-                    <figure class="figureAnimated"><a href=""><img title="notification" class="icons"
-                                src="./icons/icons8-alert-64.png" alt=""></a>
-
-                        <!-- <p class="bgGray pTransition positionA ">notification</p>  -->
-                        <button class="buttonRed">5</button>
+                    <figure><a href=""><img title="notification" class="icons"
+                                src="./assets/icons/header/notifications.svg" alt=""></a>
+                        <button class="buttonRed positionA colorWhite">5</button>
                     </figure>
                     <ul class="listTransition  pTransition positionA ">
                         <li class="transitionBgRed">John Doe sent message</li>
@@ -142,30 +137,276 @@
                 </div>
 
                 <figure class="figureAnimated">
-                    <a href=""><img title="Profile" class="icons" src="./icons/icons8-user-24.png" alt=""></a>
-                    <!-- <p class="bgGray pTransition positionA">Profile</p> -->
+                    <a href=""><img title="Profile" class="icons" src="./assets/icons/header/headerAvatar.svg"
+                            alt=""></a>
+
                 </figure>
 
             </section>
 
         </header>
         <main>
-            <section>
+            <section class=" bgWhite dGrid bradius gap2">
+                <div class="dGrid auto-fr positionR  ">
+                    <figure><img class=" icons positionA bgGreen iconBox bradius5 positionXY boxShadow "
+                            src="./assets/icons/cards/language.svg" alt="language">
+                    </figure>
+                    <p class="marginY100 fSize">Global Sales by Top Locations</p>
+                </div>
+                <div class="dGrid fr-fr padding10">
+                    <div class="padding10">
+                        <div class="dGrid fr-fr ">
+                            <div class="dGrid auto-fr">
+                                <figure><img class="icons aitems " src=" ./assets/flags/us.svg" alt="flagsUSA">
+                                </figure>
+                                <p class="padding10">USA</p>
+                            </div>
+                            <div class="dGrid auto-fr gap2">
+                                <p>2.920</p>
+                                <p>53.23%</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="dGrid fr-fr">
+                            <div class="dGrid auto-fr">
+                                <figure><img class="icons aitems" src="./assets/flags/germany.svg" alt="flagGermany">
+                                </figure>
+                                <p class="padding10">Germany</p>
+                            </div>
+                            <div class="dGrid  auto-fr gap2">
+                                <p>1.300</p>
+                                <p>4.34%</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="dGrid fr-fr">
+                            <div class="dGrid auto-fr">
+                                <figure><img class="icons aitems " src="./assets/flags/albania.svg" alt="flagAlbania">
+                                </figure>
+                                <p class="padding10">Albania</p>
+                            </div>
+                            <div class="dGrid auto-fr gap2">
+                                <p>760</p>
+                                <p>20.43%</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="dGrid fr-fr">
+                            <div class="dGrid auto-fr">
+                                <figure><img class="icons aitems " src="./assets/flags/italy.svg" alt="flagItaly">
+                                </figure>
+                                <p class="padding10">Italy</p>
+                            </div>
+                            <div class="dGrid auto-fr gap2">
+                                <p>690</p>
+                                <p>10.35%</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="dGrid fr-fr">
+                            <div class="dGrid auto-fr">
+                                <figure><img class="icons aitems" src="./assets/flags/kosovo.svg" alt="flagKosovo">
+                                </figure>
+                                <p class="padding10">Kosovo</p>
+                            </div>
+                            <div class="dGrid auto-fr gap2">
+                                <p>600</p>
+                                <p>7.87%</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="dGrid fr-fr">
+                            <div class="dGrid auto-fr">
+                                <figure><img class="icons aitems " src="./assets/flags/us.svg" alt="flagUSA"></figure>
+                                <p class="padding10">USA</p>
+                            </div>
+                            <div class="dGrid auto-fr gap2">
+                                <p>550</p>
+                                <p>5.94%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d752295.1388089178!2d20.902075449999998!3d42.56266295000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13537af354bf7df1%3A0xbfffeedfabc31791!2sKosova!5e0!3m2!1ssq!2s!4v1711579279734!5m2!1ssq!2s"
+                        width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+
+            <section class="  dGrid rowGap   bradius5 marginTop50 ">
+                <article class="dGrid fr-fr columnGap ">
+                    <div class="dGrid gap2 bgWhite bradius padding10">
+                        <div class="dGrid fr-fr positionR ">
+                            <figure><img class="iconBox  icons  aitems bgRed bradius5 positionA positionXY boxShadow"
+                                    src="./assets/icons/cards/couch.svg" alt="">
+                            </figure>
+                            <div class="dGrid jEnd">
+                                <p class="colorGray">Bookings</p>
+                                <p class="fSize">184</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="dFlex ">
+                            <figure><img class="icons aitems" src="./assets/icons/cards/warning.svg" alt=""></figure>
+                            <p class="colorGray">Get more space</p>
+                        </div>
+                    </div>
+                    <div class="dGrid gap2 bgWhite padding10 bradius ">
+                        <div class=" dGrid fr-fr positionR">
+                            <figure><img
+                                    class="icons aitems iconBox  aitems bgGreen bradius5 positionA positionXY boxShadow"
+                                    src="./assets/icons/cards/equalizer.svg" alt=""></figure>
+                            <div class="dGrid jEnd">
+                                <p class="colorGray">Website Visits</p>
+                                <p class="fSize">75.521</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="dFlex">
+
+                            <figure><img class="icons aitems" src="./assets/icons/cards/tracked.svg" alt=""></figure>
+                            <p class="colorGray"> Tracked from Google Analytics</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="dGrid fr-fr columnGap  ">
+                    <div class="dGrid gap2 bgWhite padding10 bradius">
+                        <div class="dGrid fr-fr positionR ">
+                            <figure><img
+                                    class=" icons aitems iconBox  aitems bgPink bradius5 positionA positionXY boxShadow"
+                                    src="./assets/icons/cards/storefront.svg" alt=""></figure>
+                            <div class="dGrid jEnd">
+                                <p class="colorGray">Revenue</p>
+                                <p class="fSize">$34,245</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="dFlex">
+                            <figure><img class="icons aitems" src="./assets/icons/cards/calendar.svg" alt=""></figure>
+                            <p class="colorGray">Last 24 Hours</p>
+                        </div>
+                    </div>
+                    <div class="dGrid gap2 bgWhite padding10 bradius">
+                        <div class="dGrid fr-fr positionR">
+                            <figure><img
+                                    class=" icons aitems iconBox  aitems bgBlue bradius5 positionA positionXY boxShadow"
+                                    src="./assets/icons/cards/language.svg" alt=""></figure>
+                            <div class="dGrid jEnd">
+                                <p class="colorGray">Followers</p>
+                                <p class="fSize">+245</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="dFlex">
+                            <figure><img class="icons aitems\boxShadow" src="./assets/icons/cards/update.svg" alt="">
+                            </figure>
+                            <p class="colorGray ">Just Update</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="marginTop50 textAlign">
+                <div class="dFlex gap2 ">
+                    <div class="bgWhite bradius ">
+                        <div>
+                            <figure><img class="image bradius5" src="./assets/images/card-1.jpeg" alt="image"></figure>
+                            </figure>
+                            <figure><img title="View" class="icons" src="./assets/icons/cards/view.svg" alt="view">
+
+                                <img title="Edit" class="icons" src="./assets/icons/cards/edit.svg" alt="edit">
+                                <img title="Delete" class="icons" src="./assets/icons/cards/delete.svg" alt="delete">
+                            </figure>
+                        </div>
+                        <h2>Cozy 5 Stars Apartment</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus rerum voluptatem
+                            mollitia
+                            a nulla magni ex similique accusamus, dolor excepturi est, aliquid tempore, reprehenderit
+                            repellendus? Nulla, reiciendis amet! Dolorem, minima!</p>
+                        <hr class="marginTop50">
+                        <div class="dFlex jSpaceBetween">
+                            <p>$899/night</p>
+                            <div class="dFlex">
+                                <figure><img class="icons" src="./assets/icons/cards/location.svg" alt="location">
+                                </figure>
+                                <p>Barcelona, Spain</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bgWhite bradius ">
+                        <div>
+                            <figure><img class="image bradius5 " src="./assets/images/card-2.jpeg" alt="image">
+                            </figure>
+                            </figure>
+                            <figure><img title="View" class="icons" src="./assets/icons/cards/view.svg" alt="view">
+
+                                <img title="Edit" class="icons" src="./assets/icons/cards/edit.svg" alt="edit">
+                                <img title="Delete" class="icons" src="./assets/icons/cards/delete.svg" alt="delete">
+                            </figure>
+                        </div>
+                        <h2>Office Studio</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat totam, beatae, accusantium
+                            soluta aspernatur unde commodi deserunt sapiente voluptates itaque obcaecati fugit tempore
+                            laudantium est dolorem excepturi non odit cupiditate!</p>
+                        <hr class="marginTop50">
+                        <div class="dFlex jSpaceBetween">
+                            <p>$1.119/night</p>
+                            <div class="dFlex">
+                                <figure><img class="icons" src="./assets/icons/cards/location.svg" alt="location">
+                                </figure>
+                                <p>London, UK</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="bgWhite bradius  ">
+                        <div class="positionR marginTop50 transitionCard">
+                            <figure class="positionA card3Img"><img class="image bradius5   "
+                                    src="./assets/images/card-3.jpeg" alt="image">
+                            </figure>
+                            <figure><img title="View" class="icons marginTop50" src="./assets/icons/cards/view.svg"
+                                    alt="view">
+
+                                <img title="Edit" class="icons marginTop50" src="./assets/icons/cards/edit.svg"
+                                    alt="edit">
+                                <img title="Delete" class="icons marginTop50" src="./assets/icons/cards/delete.svg"
+                                    alt="delete">
+                            </figure>
+
+                        </div>
+
+                        <h2 class="marginTop50">Beautiful Castle</h2>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque earum
+                            blanditiis magni
+                            minima quos, omnis voluptate. Officia dolorem quae voluptate perspiciatis nobis excepturi.
+                            Aliquam atque dolorum aliquid, quia necessitatibus veritatis.</p>
+                        <hr class="marginTop50">
+                        <div class="dFlex jSpaceBetween padding10">
+                            <p>$459/night</p>
+                            <div class="dFlex">
+                                <figure><img class="icons " src="./assets/icons/cards/location.svg" alt="location">
+                                </figure>
+                                <p>Milan,Italy</p>
+                            </div>
+                        </div>
+
+
+                    </div>
 
             </section>
-            <section>
-                <article></article>
-                <article></article>
-                <article></article>
-                <article></article>
-            </section>
-            <section>
-                <article></article>
-                <article></article>
-                <article></article>
-            </section>
         </main>
-        <footer></footer>
+        <hr>
+        <footer class="dFlex jSpaceBetween padding25 padding10">
+            <ul class="dFlex gap2">
+                <li>HOME</li>
+                <li>COMPANY</li>
+                <li>PROTFOLIO</li>
+                <li>BLOG</li>
+            </ul>
+            <p>@ John Doe, 2023</p>
+        </footer>
     </div>
 </body>
 
