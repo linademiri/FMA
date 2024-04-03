@@ -161,6 +161,8 @@ body {
     grid-template-columns: auto 1fr;
     background-color: rgb(221, 221, 227);
     font-family: "Roboto", sans-serif;
+    overflow-y: hidden;
+    height: 100vh;
 }
 
 /* aside */
@@ -174,6 +176,7 @@ aside {
     position: sticky;
     top: 0;
     text-align: center;
+    overflow-y: hidden;
 }
 
 .img50 {
@@ -199,11 +202,15 @@ aside {
 /* header */
 .container {
     padding: 1rem;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 .dots {
     padding: 2px;
+}
+
+.menuImg {
+    display: none;
 }
 
 .buttonRed {
@@ -263,4 +270,51 @@ main {
 
 .iconBox {
     padding: 25px;
+}
+
+/* tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    aside {
+        display: none;
+    }
+
+    header *:not(p) {
+        display: none;
+    }
+
+    .menuImg {
+        display: block;
+    }
+
+    .card-1 {
+
+        width: 100%;
+    }
+
+    .card-2 {
+        width: 100%;
+    }
+
+    .card-3 {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 100%;
+        /* transform: translateY(); */
+    }
+}
+
+/* phone */
+@media screen and (max-width: 768px) {
+    aside {
+        display: none;
+    }
+
+    header *:not(button):not(p) {
+        display: none;
+
+    }
+
+    main {
+        width: 100%;
+    }
 }
