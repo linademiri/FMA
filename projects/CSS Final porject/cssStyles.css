@@ -163,6 +163,7 @@ li {
 
 .image {
     width: 100%;
+    transform: translateY(-30px);
 }
 
 .card3Img {
