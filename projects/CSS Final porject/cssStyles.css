@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+:root {
+    --padding-40: 40px;
+}
+
 /* global */
 .icons {
     width: 25px;
@@ -53,16 +57,20 @@ li {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.columnGap {
-    column-gap: 30px;
-}
-
-.rowGap {
-    row-gap: 30px;
-}
-
 .padding10 {
     padding: 10px;
+}
+
+.padding2 {
+    padding: 2px;
+}
+
+.padding8X {
+    padding: 8px 0;
+}
+
+.iconBoxPadding {
+    padding: 25px;
 }
 
 .marginY20 {
@@ -77,8 +85,8 @@ li {
     margin-top: 80px;
 }
 
-.marginTop20 {
-    margin-top: 20px;
+.marginTop30 {
+    margin-top: 30px;
 }
 
 .alignItems {
@@ -93,7 +101,7 @@ li {
     gap: 1rem;
 }
 
-.bradius5 {
+.borderRadius5 {
     border-radius: 5px;
 }
 
@@ -153,9 +161,7 @@ li {
     text-align: center;
 }
 
-.iconBox {
-    padding: 25px;
-}
+
 
 .image {
     width: 100%;
@@ -178,9 +184,6 @@ li {
     transform: translateY(-40px);
 }
 
-.dots {
-    padding: 2px;
-}
 
 .displayNone {
     display: none;
@@ -206,7 +209,6 @@ aside {
     background-blend-mode: color;
     padding: 1rem;
     font-size: 1rem;
-    text-align: center;
 }
 
 .img50 {
@@ -217,22 +219,17 @@ aside {
     background-color: red;
 }
 
-.padding15X {
-    padding: 10px 0;
-}
 
 .asideStyle {
     grid-template-columns: 1fr auto;
-    margin: 0.8rem;
+    margin: 0.6rem;
 }
 
-.asideStyle:hover:not(.aSection, .asideTitle, .asideDashbord) {
-    background-color: rgba(0, 0, 0, 0.401);
+.asideStyle:hover:not(.asideSection, .asideTitle, .asideDashbord) {
+    background-color: rgba(81, 79, 79, 0.616);
 }
 
 /* header */
-
-
 .buttonRed {
     top: -2px;
     right: -2px;
@@ -258,10 +255,6 @@ input:focus {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15)
 }
 
-.pTransition {
-    transition: display .9s;
-}
-
 a:hover,
 .positionR:hover .listTransition {
     display: block;
@@ -275,7 +268,7 @@ a:hover,
 }
 
 .transitionBgRed {
-    padding: 5px;
+    padding: 4px;
 }
 
 .transitionBgRed:hover {
@@ -284,7 +277,7 @@ a:hover,
 
 /* main */
 main {
-    padding: 40px;
+    padding: var(--padding-40);
 }
 
 /* tablet Styles  */
@@ -305,7 +298,7 @@ main {
     }
 
     .iconsDirection {
-        bottom: 50%;
+        bottom: 100%;
     }
 }
 
@@ -327,6 +320,10 @@ main {
     }
 
     .iconsDirection {
-        bottom: 20%;
+        bottom: -20%;
+    }
+
+    footer {
+        font-size: 0.6rem;
     }
 }

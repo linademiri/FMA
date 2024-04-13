@@ -8,39 +8,38 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap"
         rel="stylesheet">
     <!-- styles -->
     <link rel="stylesheet" href="./cssStyles.css">
 </head>
 
 <body class="dGrid auto-fr">
-    <aside class="colorWhite overflowYScroll">
+    <aside class="colorWhite">
         <section class="asideTitle asideStyle  dGrid gap1 ">
-            <div class="dFlex gap1">
+            <div class="dFlex gap1 ">
                 <h1> CP</h1>
                 <h1> COOL PAGE</h1>
             </div>
         </section>
         <hr>
-        <section class="aSection asideStyle dGrid padding15X">
-            <div class="dFlex gap1">
+        <section class="asideSection asideStyle dGrid padding8X alignItems ">
+            <div class="dFlex gap1 alignItems">
                 <figure>
                     <img class="img50 borderRadius50" src="./assets/images/avatar.jpg" alt="avatar">
                 </figure>
                 <h1 class="textAlign">John Doc</h1>
             </div>
-            <figure> <img src="./assets/icons/asides/expandMore.svg" alt="arrow"></figure>
+            <figure> <img class="a" src="./assets/icons/asides/expandMore.svg" alt="arrow"></figure>
         </section>
         <hr>
-        <section class="asideDashbord asideStyle  dGrid padding15X ">
-            <div class="dFlex gap1">
+        <section class="asideDashbord asideStyle  dGrid padding8X borderRadius5">
+            <div class="dFlex gap1 ">
                 <figure><img src="./assets/icons/asides/asideDashboard.svg" alt="Dashboard"></figure>
                 <h1>Dashboard</h1>
             </div>
         </section>
-        <section class="asideStyle  dGrid  padding15X gap2">
+        <section class="asideStyle  dGrid  padding8X gap2 borderRadius5">
             <div class="dFlex gap1">
                 <figure>
                     <img src="./assets/icons/asides/pages.svg" alt="pages">
@@ -49,7 +48,7 @@
             </div>
             <figure> <img src="./assets/icons/asides/expandMore.svg" alt="arrow"></figure>
         </section>
-        <section class="asideStyle dGrid padding15X gap2">
+        <section class="asideStyle dGrid padding8X gap2 borderRadius5">
             <div class="dFlex gap1">
                 <figure>
                     <img src="./assets/icons/asides/components.svg" alt="components">
@@ -58,7 +57,7 @@
             </div>
             <figure> <img src="./assets/icons/asides/expandMore.svg" alt="arrow"></figure>
         </section>
-        <section class="asideStyle  dGrid   padding15X gap2">
+        <section class="asideStyle  dGrid   padding8X gap2 borderRadius55">
             <div class="dFlex gap1">
                 <figure>
                     <img src="./assets/icons/asides/form.svg" alt="form">
@@ -67,7 +66,7 @@
             </div>
             <figure> <img src="./assets/icons/asides/expandMore.svg" alt="arrow"></figure>
         </section>
-        <section class="asideStyle dGrid padding15X gap2">
+        <section class="asideStyle dGrid padding8X gap2 borderRadius5">
             <div class="dFlex gap1">
                 <figure>
                     <img src="./assets/icons/asides/table.svg" alt="table">
@@ -76,7 +75,7 @@
             </div>
             <figure> <img src="./assets/icons/asides/expandMore.svg" alt="arrow"></figure>
         </section>
-        <section class="asideStyle dGrid padding15X gap2">
+        <section class="asideStyle dGrid padding8X gap2 borderRadius5">
             <div class="dFlex gap1">
                 <figure>
                     <img src="./assets/icons/asides/map.svg" alt="map">
@@ -85,7 +84,7 @@
             </div>
             <figure> <img src="./assets/icons/asides/expandMore.svg" alt="arrow"></figure>
         </section>
-        <section class="asideStyle dGrid   padding15X gap2">
+        <section class="asideStyle dGrid   padding8X gap2 borderRadius5">
             <div class="dFlex gap1">
                 <figure>
                     <img src="./assets/icons/asides/widget.svg" alt="widget">
@@ -94,7 +93,7 @@
             </div>
             <figure> <img src="./assets/icons/asides/expandMore.svg" alt="arrow"></figure>
         </section>
-        <section class="asideStyle dGrid   padding15X gap2">
+        <section class="asideStyle dGrid   padding8X gap2 borderRadius5">
             <div class="dFlex gap1">
                 <figure>
                     <img src="./assets/icons/asides/chart.svg" alt="chart">
@@ -102,10 +101,8 @@
                 <h1>Chart</h1>
             </div>
             <figure> <img src="./assets/icons/asides/expandMore.svg" alt="arrow"></figure>
-
-
         </section>
-        <section class="asideStyle dGrid padding15X gap2">
+        <section class="asideStyle dGrid padding8X gap2 borderRadius5">
             <div class="dFlex gap1">
                 <figure>
                     <img src="./assets/icons/asides/calendar.svg" alt="calendar">
@@ -117,24 +114,22 @@
         </section>
 
     </aside>
-    <div class="container padding10 overflowYScroll">
+    <div class=" padding10 overflowYScroll">
         <header>
             <div class="headerDashboard dFlex justifySpaceBetween ">
-                <section class="  dFlex textAlign gap1">
-                    <figure><a href=""><img title="See more" class="dots icons shadow bgWhite borderRadius50 "
+                <section class="  dFlex gap1 alignItems">
+                    <figure><a href=""><img title="See more" class="padding2 icons shadow bgWhite borderRadius50"
                                 src="./assets/icons/header/more.svg" alt="">
                         </a>
                     </figure>
                     <p>Dashboard</p>
                 </section>
-
-
                 <section class="dFlex textAlign gap1">
                     <form action="" class="dFlex">
                         <input type="text" placeholder="Search" id="Search">
                         <label for="Search">
                             <figure class=" ">
-                                <img class=" dots icons shadow bgWhite borderRadius50"
+                                <img class=" padding2 icons shadow bgWhite borderRadius50"
                                     src="./assets/icons/header/search.svg" alt="">
                             </figure>
                         </label>
@@ -149,7 +144,7 @@
                                     src="./assets/icons/header/notifications.svg" alt=""></a>
                             <button class="buttonRed positionA colorWhite borderRadius50">5</button>
                         </figure>
-                        <ul class="listTransition  pTransition displayNone positionA ">
+                        <ul class="listTransition displayNone positionA ">
                             <li class="transitionBgRed">John Doe sent message</li>
                             <li class="transitionBgRed">John Doe sent message </li>
                             <li class="transitionBgRed">Someone viewed your profile </li>
@@ -165,89 +160,88 @@
                     </figure>
                 </section>
             </div>
-            <div class="asideResponsive  displayNone dFlex justifySpaceBetween  ">
+            <div class="asideResponsive displayNone dFlex justifySpaceBetween  ">
                 <h1>Dashboard</h1>
                 <figure><img src="./assets/icons/header/menu.svg" alt="menu"></figure>
             </div>
         </header>
         <main>
-            <section class="card-1 bgWhite dGrid bradius5  boxShadow textAlign">
-                <div class="dFlex padding10">
-                    <figure><img class="transformY icons bgGreen iconBox bradius5  boxShadow marginY20"
+            <section class="card-1 bgWhite dGrid borderRadius5 boxShadow ">
+                <div class="dFlex padding10 ">
+                    <figure><img class="transformY icons bgGreen iconBoxPadding Padding  borderRadius5 boxShadow "
                             src="./assets/icons/cards/language.svg" alt="language">
                     </figure>
                     <p class="marginY20 fSize">Global Sales by Top Locations</p>
                 </div>
-                <div class="card-1flags dGrid auto-fr padding10 textAlign">
+                <div class="card-1flags dGrid auto-fr padding10">
                     <div class="padding10">
-                        <div class="dGrid fr-auto textAlign gap2">
-                            <div class="dGrid auto-fr">
-                                <figure><img class="icons textAlign " src=" ./assets/flags/us.svg" alt="flagsUSA">
+                        <div class="dGrid fr-auto  gap2 ">
+                            <div class="dGrid auto-fr alignItems">
+                                <figure><img class="icons" src=" ./assets/flags/us.svg" alt="flagsUSA">
                                 </figure>
                                 <p class="padding10">USA</p>
                             </div>
-                            <div class="dGrid auto-fr gap1">
+                            <div class="dGrid auto-fr gap1 alignItems">
                                 <p>2.920</p>
                                 <p>53.23%</p>
                             </div>
                         </div>
                         <hr>
-                        <div class="dGrid fr-auto textAlign gap2">
-                            <div class="dGrid auto-fr">
-                                <figure><img class="icons textAlign" src="./assets/flags/germany.svg" alt="flagGermany">
+                        <div class="dGrid fr-auto  gap2">
+                            <div class="dGrid auto-fr alignItems">
+                                <figure><img class="icons " src="./assets/flags/germany.svg" alt="flagGermany">
                                 </figure>
                                 <p class="padding10">Germany</p>
                             </div>
-                            <div class="dGrid  auto-fr gap2">
+                            <div class="dGrid  auto-fr gap2 alignItems">
                                 <p>1.300</p>
                                 <p>4.34%</p>
                             </div>
                         </div>
                         <hr>
-                        <div class="dGrid fr-auto textAlign gap2">
-                            <div class="dGrid auto-fr">
-                                <figure><img class="icons textAlign " src="./assets/flags/albania.svg"
-                                        alt="flagAlbania">
+                        <div class="dGrid fr-auto  gap2">
+                            <div class="dGrid auto-fr alignItems">
+                                <figure><img class="icons  " src="./assets/flags/albania.svg" alt="flagAlbania">
                                 </figure>
                                 <p class="padding10">Albania</p>
                             </div>
-                            <div class="dGrid auto-fr gap2">
+                            <div class="dGrid auto-fr gap2 alignItems">
                                 <p>760</p>
                                 <p>20.43%</p>
                             </div>
                         </div>
                         <hr>
-                        <div class="dGrid fr-auto textAlign gap2">
-                            <div class="dGrid auto-fr">
-                                <figure><img class="icons textAlign " src="./assets/flags/italy.svg" alt="flagItaly">
+                        <div class="dGrid fr-auto  gap2">
+                            <div class="dGrid auto-fr alignItems">
+                                <figure><img class="icons  " src="./assets/flags/italy.svg" alt="flagItaly">
                                 </figure>
                                 <p class="padding10">Italy</p>
                             </div>
-                            <div class="dGrid auto-fr gap2">
+                            <div class="dGrid auto-fr gap2 alignItems">
                                 <p>690</p>
                                 <p>10.35%</p>
                             </div>
                         </div>
                         <hr>
-                        <div class="dGrid fr-auto textAlign gap2">
-                            <div class="dGrid auto-fr">
-                                <figure><img class="icons textAlign" src="./assets/flags/kosovo.svg" alt="flagKosovo">
+                        <div class="dGrid fr-auto  gap2">
+                            <div class="dGrid auto-fr alignItems">
+                                <figure><img class="icons " src="./assets/flags/kosovo.svg" alt="flagKosovo">
                                 </figure>
                                 <p class="padding10">Kosovo</p>
                             </div>
-                            <div class="dGrid auto-fr gap2">
+                            <div class="dGrid auto-fr gap2 alignItems">
                                 <p>600</p>
                                 <p>7.87%</p>
                             </div>
                         </div>
                         <hr>
-                        <div class="dGrid fr-auto textAlign gap2">
-                            <div class="dGrid auto-fr">
-                                <figure><img class="icons textAlign " src="./assets/flags/us.svg" alt="flagUSA">
+                        <div class="dGrid fr-auto  gap2">
+                            <div class="dGrid auto-fr alignItems">
+                                <figure><img class="icons " src="./assets/flags/us.svg" alt="flagUSA">
                                 </figure>
                                 <p class="padding10">USA</p>
                             </div>
-                            <div class="dGrid auto-fr gap2">
+                            <div class="dGrid auto-fr gap2 alignItems">
                                 <p>550</p>
                                 <p>5.94%</p>
                             </div>
@@ -260,12 +254,12 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
-            <section class=" card-2 dGrid rowGap bradius5 marginTop80">
-                <article class=" card-2 dGrid fr-fr columnGap gap2">
-                    <div class="dGrid  bgWhite gap2  padding10 bradius5 boxShadow ">
+            <section class=" card-2 dGrid gap1 borderRadius5 marginTop80">
+                <article class=" card-2 dGrid fr-fr gap2">
+                    <div class="dGrid  bgWhite gap2  padding10 borderRadius5 boxShadow ">
                         <div class="dGrid fr-fr positionR ">
                             <figure><img
-                                    class=" icons alignItems  iconBox  bgRed bradius5 positionA transformY boxShadow"
+                                    class=" icons alignItems  iconBoxPadding Padding   bgRed borderRadius5 positionA transformY boxShadow"
                                     src="./assets/icons/cards/couch.svg" alt="couch">
                             </figure>
                             <div class="dGrid justifyContentEnd ">
@@ -274,16 +268,16 @@
                             </div>
                         </div>
                         <hr>
-                        <div class="dFlex textAlign">
-                            <figure><img class="icons alignItems " src="./assets/icons/cards/warning.svg" alt="">
+                        <div class="dFlex alignItems">
+                            <figure><img class="icons" src="./assets/icons/cards/warning.svg" alt="">
                             </figure>
                             <p class="colorGray">Get more space</p>
                         </div>
                     </div>
-                    <div class="dGrid gap2 bgWhite padding10 bradius5 boxShadow ">
+                    <div class="dGrid gap2 bgWhite padding10 borderRadius5 boxShadow ">
                         <div class=" dGrid fr-fr positionR">
                             <figure><img
-                                    class="icons  alignItems  iconBox  textAlign bgGreen bradius5 positionA transformY boxShadow"
+                                    class="icons  alignItems  iconBoxPadding Padding   bgGreen borderRadius5 positionA transformY boxShadow"
                                     src="./assets/icons/cards/equalizer.svg" alt=""></figure>
                             <div class="dGrid justifyContentEnd">
                                 <p class="colorGray">Website Visits</p>
@@ -291,172 +285,150 @@
                             </div>
                         </div>
                         <hr>
-                        <div class="dFlex textAlign">
-
-                            <figure><img class="icons textAlign" src="./assets/icons/cards/tracked.svg" alt="">
+                        <div class="dFlex alignItems">
+                            <figure><img class="icons" src="./assets/icons/cards/tracked.svg" alt="">
                             </figure>
                             <p class="colorGray"> Tracked from Google Analytics</p>
                         </div>
                     </div>
                 </article>
-                <article class="card-2  dGrid fr-fr columnGap gap2 ">
-                    <div class="dGrid gap2 bgWhite padding10 bradius5 boxShadow">
-                        <div class="dGrid fr-fr positionR padding10 ">
+                <article class=" card-2 dGrid fr-fr gap2 marginTop30">
+                    <div class="dGrid  bgWhite gap2  padding10 borderRadius5 boxShadow ">
+                        <div class="dGrid fr-fr positionR ">
                             <figure><img
-                                    class=" icons textAlign iconBox  textAlign bgPink bradius5 positionA transformY boxShadow"
-                                    src="./assets/icons/cards/storefront.svg" alt=""></figure>
-                            <div class="dGrid justifyContentEnd">
+                                    class=" icons alignItems  iconBoxPadding Padding   bgPink borderRadius5 positionA transformY boxShadow"
+                                    src="./assets/icons/cards/storefront.svg" alt="couch">
+                            </figure>
+                            <div class="dGrid justifyContentEnd ">
                                 <p class="colorGray">Revenue</p>
                                 <p class="fSize">$34,245</p>
                             </div>
                         </div>
                         <hr>
-                        <div class="dFlex textAlign">
-                            <figure><img class="icons textAlign" src="./assets/icons/cards/calendar.svg" alt="">
+                        <div class="dFlex alignItems">
+                            <figure><img class="icons " src="./assets/icons/cards/calendar.svg" alt="calendar">
                             </figure>
                             <p class="colorGray">Last 24 Hours</p>
                         </div>
                     </div>
-                    <div class="dGrid gap2 bgWhite padding10 bradius5 boxShadow">
-                        <div class="dGrid fr-fr positionR padding10">
-                            <figure>
-                                <img class=" icons textAlign iconBox  textAlign bgBlue bradius5 positionA transformY boxShadow"
-                                    src="./assets/icons/cards/language.svg" alt="">
-                            </figure>
+                    <div class="dGrid gap2 bgWhite padding10 borderRadius5 boxShadow ">
+                        <div class=" dGrid fr-fr positionR">
+                            <figure><img
+                                    class="icons  alignItems  iconBoxPadding Padding  bgBlue borderRadius5 positionA transformY boxShadow"
+                                    src="./assets/icons/cards/language.svg" alt="figure"></figure>
                             <div class="dGrid justifyContentEnd">
                                 <p class="colorGray">Followers</p>
                                 <p class="fSize">+245</p>
                             </div>
                         </div>
                         <hr>
-                        <div class="dFlex textAlign">
-                            <figure><img class="icons textAlignboxShadow" src="./assets/icons/cards/update.svg" alt="">
+                        <div class="dFlex alignItems">
+                            <figure><img class="icons " src="./assets/icons/cards/update.svg" alt="update">
                             </figure>
-                            <p class="colorGray ">Just Update</p>
+                            <p class="colorGray"> Just Update</p>
                         </div>
                     </div>
                 </article>
-                <div class="marginTop20">
-                    <h1>Manage Listings</h1>
-                </div>
-                <section class="card-3 textAlign dGrid fr-fr-fr gap2  marginTop20">
-                    <article class="bradius5 bgWhite padding10 boxShadow marginTop50 marginTop20">
-                        <div class=" transitionCard positionR ">
-                            <figure class="card3Img"><img class=" image transformY card3Img bradius5 "
-                                    src="./assets/images/card-1.jpeg" alt="image">
+            </section>
+            <div class="marginTop80">
+                <h1>Manage Listings</h1>
+            </div>
+            <section class="card-3 textAlign dGrid fr-fr-fr gap2 marginTop30">
+                <article class="borderRadius5 bgWhite padding10 boxShadow  marginTop30">
+                    <div class=" transitionCard positionR ">
+                        <figure class="card3Img"><img class=" image transformY card3Img borderRadius5"
+                                src="./assets/images/card-1.jpeg" alt="image">
+                        </figure>
+                        <figure class="positionA marginTop80 iconsDirection displayNone">
+                            <img class=" icons padding10" title="View" src="./assets/icons/cards/view.svg" alt="view">
+                            <img class="icons padding10" title="Edit" src="./assets/icons/cards/edit.svg" alt="edit">
+                            <img class="icons padding10 " title="Delete" src="./assets/icons/cards/delete.svg"
+                                alt="delete">
+                        </figure>
+                    </div>
+                    <h2 class="padding10">Cozy 5 Stars Apartment</h2>
+                    <p class="colorGray"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Doloremque
+                        earum blanditiis magni minima quos, omnis voluptate. Officia dolorem quae voluptate
+                        perspiciatis nobis excepturi.
+                    </p>
+                    <hr class="marginTop80">
+                    <div class=" dFlex justifySpaceBetween  padding10 textAlign">
+                        <p>$499/night</p>
+                        <div class="dFlex colorGray">
+                            <figure><img class="icons " src="./assets/icons/cards/location.svg" alt="location">
                             </figure>
-                            <figure class="positionA marginTop80 iconsDirection displayNone">
-                                <img class=" icons padding10" title="View" src="./assets/icons/cards/view.svg"
-                                    alt="view">
-                                <img class="icons padding10" title="Edit" src="./assets/icons/cards/edit.svg"
-                                    alt="edit">
-                                <img class="icons padding10 " title="Delete" src="./assets/icons/cards/delete.svg"
-                                    alt="delete">
+                            <p>Barcelona,Spain</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="borderRadius5 bgWhite padding10 boxShadow marginTop50 marginTop30">
+                    <div class=" transitionCard positionR ">
+                        <figure class="card3Img"><img class=" image transformY card3Img borderRadius5"
+                                src="./assets/images/card-2.jpeg" alt="image">
+                        </figure>
+                        <figure class="positionA marginTop80 iconsDirection displayNone">
+                            <img class=" icons padding10" title="View" src="./assets/icons/cards/view.svg" alt="view">
+                            <img class="icons padding10" title="Edit" src="./assets/icons/cards/edit.svg" alt="edit">
+                            <img class="icons padding10 " title="Delete" src="./assets/icons/cards/delete.svg"
+                                alt="delete">
+                        </figure>
+                    </div>
+                    <h2 class="padding10">Office Studio</h2>
+                    <p class="colorGray"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Doloremque
+                        earum blanditiis magni minima quos, omnis voluptate. Officia dolorem quae voluptate
+                        perspiciatis nobis excepturi.
+                    </p>
+                    <hr class="marginTop80">
+                    <div class=" dFlex justifySpaceBetween  padding10 textAlign">
+                        <p>$459/night</p>
+                        <div class="dFlex colorGray">
+                            <figure><img class="icons " src="./assets/icons/cards/location.svg" alt="location">
                             </figure>
+                            <p>London,UK</p>
                         </div>
-                        <h2 class="padding10">Cozy 5 Stars Apartment</h2>
-                        <p class="colorGray"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Doloremque
-                            earum blanditiis magni minima quos, omnis voluptate. Officia dolorem quae voluptate
-                            perspiciatis nobis excepturi. Aliquam atque dolorum aliquid, quia necessitatibus
-                            veritatis.
-                        </p>
-                        <hr class="marginTop80">
-                        <div class=" dFlex justifySpaceBetween  padding10 textAlign">
-                            <p>$499/night</p>
-                            <div class="dFlex colorGray">
-                                <figure><img class="icons " src="./assets/icons/cards/location.svg" alt="location">
-                                </figure>
-                                <p>Barcelona,Spain</p>
-                            </div>
-                        </div>
-
-                    </article>
-                    <article class="bradius5 bgWhite padding10 boxShadow marginTop50 marginTop20">
-                        <div class=" transitionCard positionR ">
-                            <figure class="card3Img"><img class=" image transformY card3Img bradius5 "
-                                    src="./assets/images/card-2.jpeg" alt="image">
+                    </div>
+                </article>
+                <article class="borderRadius5 bgWhite padding10 boxShadow marginTop50 marginTop30">
+                    <div class=" transitionCard positionR ">
+                        <figure class="card3Img"><img class=" image transformY card3Img borderRadius5"
+                                src="./assets/images/card-3.jpeg" alt="image">
+                        </figure>
+                        <figure class="positionA marginTop80 iconsDirection displayNone">
+                            <img class=" icons padding10" title="View" src="./assets/icons/cards/view.svg" alt="view">
+                            <img class="icons padding10" title="Edit" src="./assets/icons/cards/edit.svg" alt="edit">
+                            <img class="icons padding10 " title="Delete" src="./assets/icons/cards/delete.svg"
+                                alt="delete">
+                        </figure>
+                    </div>
+                    <h2 class="padding10">Beautiful Castle</h2>
+                    <p class="colorGray"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Doloremque
+                        earum blanditiis magni minima quos, omnis voluptate. Officia dolorem quae voluptate
+                        perspiciatis nobis excepturi.
+                    </p>
+                    <hr class="marginTop80">
+                    <div class=" dFlex justifySpaceBetween  padding10 textAlign">
+                        <p>$459/night</p>
+                        <div class="dFlex colorGray">
+                            <figure><img class="icons " src="./assets/icons/cards/location.svg" alt="location">
                             </figure>
-                            <figure class="positionA marginTop80 iconsDirection displayNone">
-                                <img class=" icons padding10" title="View" src="./assets/icons/cards/view.svg"
-                                    alt="view">
-                                <img class="icons padding10" title="Edit" src="./assets/icons/cards/edit.svg"
-                                    alt="edit">
-                                <img class="icons padding10 " title="Delete" src="./assets/icons/cards/delete.svg"
-                                    alt="delete">
-                            </figure>
+                            <p>Milan,Italy</p>
                         </div>
-                        <h2 class="padding10">Office Studio</h2>
-                        <p class="colorGray"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Doloremque
-                            earum blanditiis magni minima quos, omnis voluptate. Officia dolorem quae voluptate
-                            perspiciatis nobis excepturi. Aliquam atque dolorum aliquid, quia necessitatibus
-                            veritatis.
-                        </p>
-                        <hr class="marginTop80">
-                        <div class=" dFlex justifySpaceBetween  padding10 textAlign">
-                            <p>$459/night</p>
-                            <div class="dFlex colorGray">
-                                <figure><img class="icons " src="./assets/icons/cards/location.svg" alt="location">
-                                </figure>
-                                <p>London,UK</p>
-                            </div>
-                        </div>
-
-                    </article>
-                    <article class="bradius5 bgWhite padding10 boxShadow marginTop50 marginTop20">
-                        <div class=" transitionCard positionR ">
-                            <figure class="card3Img"><img class=" image transformY card3Img bradius5 "
-                                    src="./assets/images/card-3.jpeg" alt="image">
-                            </figure>
-                            <figure class="positionA marginTop80 iconsDirection displayNone">
-                                <img class=" icons padding10" title="View" src="./assets/icons/cards/view.svg"
-                                    alt="view">
-                                <img class="icons padding10" title="Edit" src="./assets/icons/cards/edit.svg"
-                                    alt="edit">
-                                <img class="icons padding10 " title="Delete" src="./assets/icons/cards/delete.svg"
-                                    alt="delete">
-                            </figure>
-                        </div>
-                        <h2 class="padding10">Beautiful Castle</h2>
-                        <p class="colorGray"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Doloremque
-                            earum blanditiis magni minima quos, omnis voluptate. Officia dolorem quae voluptate
-                            perspiciatis nobis excepturi. Aliquam atque dolorum aliquid, quia necessitatibus
-                            veritatis.
-                        </p>
-                        <hr class="marginTop80">
-                        <div class=" dFlex justifySpaceBetween  padding10 textAlign">
-                            <p>$459/night</p>
-                            <div class="dFlex colorGray">
-                                <figure><img class="icons " src="./assets/icons/cards/location.svg" alt="location">
-                                </figure>
-                                <p>Milan,Italy</p>
-                            </div>
-                        </div>
-
-                    </article>
-                </section>
+                    </div>
+                </article>
+            </section>
         </main>
         <hr>
         <footer class="dFlex justifySpaceBetween  padding10 ">
-            <ul class="dFlex gap2 ">
-                <a href="">
-                    <li class="colorBlack">HOME</li>
-                </a>
-                <a href="">
-                    <li class="colorBlack">COMPANY</li>
-                </a>
-                <a href="">
-                    <li class="colorBlack">PROTFOLIO</li>
-                </a>
-                <a href="">
-                    <li class="colorBlack">PROTFOLIO</li>
-                </a>
-            </ul>
-
+            <nav class="dFlex gap1 colorBlack">
+                <a class="colorBlack" href="">HOME</a>
+                <a class="colorBlack" href="">COMPANY</a>
+                <a class="colorBlack" href="">PROTFOLIO</a>
+                <a class="colorBlack" href="">PROTFOLIO </a>
+            </nav>
             <p class="colorGray ">@ John Doe, 2023</p>
-
         </footer>
     </div>
 </body>
