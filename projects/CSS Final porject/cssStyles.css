@@ -14,7 +14,7 @@
 }
 
 .iconsDirection {
-    top: 50%;
+    bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -279,7 +279,7 @@ main {
 }
 
 /* tablet Styles  */
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
 
     aside,
     .headerDashboard {
@@ -294,14 +294,10 @@ main {
     .card-3 {
         grid-template-columns: 1fr;
     }
-
-    .iconsDirection {
-        bottom: 100%;
-    }
 }
 
 /* iphone */
-@media (max-width: 640px) {
+@media (max-width: 740px) {
 
     aside,
     .headerDashboard {
@@ -315,10 +311,6 @@ main {
     .card-2,
     .card-3 {
         grid-template-columns: 1fr;
-    }
-
-    .iconsDirection {
-        bottom: -20%;
     }
 
     footer {
