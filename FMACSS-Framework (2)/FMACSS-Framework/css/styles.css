@@ -289,7 +289,8 @@ body {
 }
 
 .card5 {
-    background-image: url(/FMACSS-Framework/img/Parallex.jpg);
+    background-image: url(Parallex.jpg);
+    background-image: url(/FMACSS-Framework/img/);
     background-size: cover;
     background-attachment: scroll;
     background-position: center;
