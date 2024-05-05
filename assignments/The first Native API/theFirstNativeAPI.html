@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The first Native API</title>
+</head>
+
+<body>
+    <script>
+        var website = prompt('Which website do you want to visit?');
+        if (website) {
+            const url = 'https://www.${website}.com';
+            location.href = url;
+        } else {
+
+            console.log("No website specified. Staying on this page.");
+        }
+    </script>
+</body>
+
+</html>
