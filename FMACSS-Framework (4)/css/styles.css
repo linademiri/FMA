@@ -1,0 +1,548 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* global */
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 3rem;
+}
+
+.fontSize {
+    font-size: 80px;
+}
+
+.dFlex {
+    display: flex;
+}
+
+.dGrid {
+    display: grid;
+}
+
+.alItems {
+    align-items: center;
+}
+
+.gap-80 {
+    gap: 80rem;
+}
+
+.bgPink {
+    background-color: rgb(248, 233, 209);
+}
+
+.bgWhite {
+    background-color: white;
+}
+
+.bgTransparent {
+    background-color: transparent;
+}
+
+.bgBlack {
+    background-color: rgba(0, 0, 0, 0.753);
+}
+
+.colorGray {
+    color: rgb(189, 184, 184);
+}
+
+.colorWhite {
+    color: white;
+}
+
+.colorPink {
+    color: rgb(188, 128, 147);
+}
+
+li:hover {
+    color: rgb(188, 128, 147);
+}
+
+.colorP :hover {
+    background-color: rgb(188, 128, 147);
+    color: black;
+}
+
+.displayNone {
+    display: none;
+}
+
+.displayBlock {
+    display: block;
+}
+
+.positionA {
+    position: absolute;
+}
+
+.positionR {
+    position: relative;
+}
+
+.positionS {
+    position: fixed;
+}
+
+.icons {
+    width: 20px;
+}
+
+.listTransition {
+    top: 60px;
+    right: 20px;
+    width: 15rem;
+    background-color: white;
+}
+
+.beauty {
+    background-image: url(/FMACSS-Framework/img/viber_image_2024-04-20_20-55-43-620.jpg);
+    background-color: rgba(245, 245, 220, 0.973);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color;
+}
+
+.shop:hover .listTransition {
+    display: block;
+}
+
+.divBeauty:hover .listTransition {
+    display: block;
+}
+
+.imageCream:hover .listTransition {
+    display: block;
+}
+
+.sale:hover .listTransition {
+    display: flex;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.img-50 {
+    width: 200px;
+}
+
+.img-xxs {
+    width: 25%;
+}
+
+.bRadius {
+    border-radius: 50%;
+}
+
+.marginY20 {
+    margin: 0 10px;
+}
+
+.marginTop {
+    margin-top: 100px;
+}
+
+.padding50 {
+    padding: 50px;
+}
+
+.height {
+    height: 20px;
+}
+
+/* body */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    background-color: #fff;
+    letter-spacing: .8px;
+    box-sizing: inherit;
+}
+
+/* main */
+.gridfrfr {
+    grid-template-columns: auto 1fr;
+}
+
+.grid2fr {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid4fr {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid3fr {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid5fr {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.gridRow {
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.gridRow2 {
+    grid-row: 2;
+}
+
+.button:hover {
+    background-color: rgb(202, 140, 160);
+    border: none;
+}
+
+.borderPink {
+    border-bottom: 1px solid palevioletred;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.background-image {
+    width: 85%;
+}
+
+.overlay {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    top: 15%;
+    left: 40%;
+}
+
+.overlayXY {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 20%;
+}
+
+.overlayBL {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: -5px;
+    left: 125px;
+}
+
+.overlayB {
+    transform: translate(-50%, -50%);
+    bottom: -130px;
+}
+
+.card3Hover:hover .overlayBL {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.295);
+    background-blend-mode: color;
+    transition: overlayBL 0.10s ease;
+}
+
+.positionRight {
+    right: 47px;
+}
+
+.imgh {
+    height: 100%;
+    transform: translateY(-5px);
+}
+
+.img2 {
+    width: 34rem;
+}
+
+
+.divImgHover:hover .imgh {
+    display: block;
+    transform: translateY(-352px);
+}
+
+.bRadius {
+    border-radius: 5px;
+}
+
+.width {
+    height: 20%;
+}
+
+.vertical {
+    padding: 10px;
+    display: flex;
+}
+
+.card3 {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card4 {
+    background-image: url(/img/testimonial-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+.card5 {
+    background-image: url();
+    background-image: url(/img/Parallex.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tranformY {
+    transform: translateY(-40px);
+}
+
+.card5Button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.rating:not(:checked)>input {
+    position: absolute;
+    appearance: none;
+}
+
+.rating:not(:checked)>label {
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    color: #666;
+}
+
+.rating:not(:checked)>label:before {
+    content: '★';
+}
+
+.rating>input:checked+label:hover,
+.rating>input:checked+label:hover~label,
+.rating>input:checked~label:hover,
+.rating>input:checked~label:hover~label,
+.rating>label:hover~input:checked~label {
+    color: #e58e09;
+}
+
+.rating:not(:checked)>label:hover,
+.rating:not(:checked)>label:hover~label {
+    color: #ff9e0b;
+}
+
+.rating>input:checked~label {
+    color: #ffa723;
+}
+
+button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    letter-spacing: 3px;
+    background-color: hsl(303, 78%, 84%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: hsl(302, 72%, 68%) 0px 7px 29px 0px;
+}
+
+button:active {
+    letter-spacing: 3px;
+    background-color: hsl(302, 72%, 68%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: hsl(302, 72%, 68%) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+.cardAdd {
+    position: relative;
+    width: 15rem;
+    height: 20rem;
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 120ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0.5em; */
+    /* padding-bottom: 3.4em; */
+}
+
+.cardAdd::after {
+    content: "Add to Cart";
+    padding-top: 1.25em;
+    padding-left: 1.25em;
+    position: absolute;
+    left: 10px;
+    bottom: -60px;
+    background: #eeabd6;
+    color: #fff;
+    height: 2.5em;
+    width: 90%;
+    transition: all 80ms;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0;
+}
+
+.cardAdd:hover::after {
+    bottom: 0;
+    opacity: 1;
+}
+
+/* tablet Styles  */
+@media only screen and (max-width: 1080px) {
+    .header {
+        display: none;
+    }
+
+    .searchResponsive {
+        display: block;
+    }
+
+    .fontR {
+        font-size: 20px;
+    }
+
+    .card1Responsive {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card2Responsive {
+        align-items: center;
+        justify-content: centerd;
+    }
+
+    .card2Responsive,
+    .card3Responsive,
+    .card4Responsive,
+    .card5Responsive,
+    .card6Responsive {
+        grid-template-columns: 1fr;
+    }
+
+    .imgCard3R {
+        right: 65px;
+        top: 352px;
+    }
+
+    .divResponsive {
+        font-size: 0.4rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    .imgResponsive {
+        width: 115px;
+    }
+}
+
+/* iphone */
+@media only screen and (max-width: 600px) {
+    .header {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .searchResponsive {
+        display: block;
+    }
+
+    .fontR {
+        font-size: 15px;
+    }
+
+    .card1Responsive,
+    .card2Responsive,
+    .card3Responsive,
+    .card4Responsive,
+    .card5Responsive,
+    .card6Responsive {
+        grid-template-columns: 1fr;
+    }
+
+    .card2Responsive {
+        align-items: center;
+        justify-content: centerd;
+    }
+
+    .imgCard3R {
+        right: 24px;
+        top: 351px;
+    }
+
+    .img4card {
+        width: 350px;
+    }
+
+    .overlay {
+        top: 60px;
+        font-size: 0.8rem;
+    }
+
+    .divResponsive {
+        font-size: 0.4rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .displayResponsive {
+        display: none;
+    }
+
+    footer {
+        font-size: 0.6rem;
+    }
+
+    .imgResponsive {
+        width: 90px;
+    }
+
+    .buttonResponsive {
+        height: 30px;
+        width: 100px;
+        font-size: 0.5rem;
+    }
+
+    .headerResponsive {
+        font-size: 0.7rem;
+    }
+
+    .headerResponsive {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .listTransition {
+        top: 60px;
+        bottom: 20px;
+    }
+}
