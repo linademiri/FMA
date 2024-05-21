@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librat</title>
+</head>
+
+<body>
+    <table border="1" cellpadding="5" id="libratData">
+        <thead>
+            <tr>
+                <td>#</td>
+                <td>Title</td>
+            </tr>
+        </thead>
+        <tbody id="libratData">
+
+        </tbody>
+    </table>
+    <script>
+        const libratData = document.querySelector('#libratData')
+
+        let librari = ['Harry Potter', 'It ends with us', 'Gu gu pici gu', 'Beni ecen vet', 'Kukulla', 'Tullubat e lulit', 'luli i vocerr'];
+        for (let i = 0; i < librari.length; i++) {
+            libratData.innerHTML
+                += `
+    <tr>
+                <td>${i + 1}</td>
+                <td>${librari[i]}</td>
+            </tr>
+
+`;
+        }
+
+
+    </script>
+</body>
+
+</html>
