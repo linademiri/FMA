@@ -46,13 +46,15 @@ public class Pajisja {
 
     @Override
     public boolean equals(Object obj) {
-        if (obj instanceof Pajisja) {
-            Pajisja p = (Pajisja) obj;
-            if (p.getnumeriSerik() == numeriSerik) {
-                return true;
-            }
-        }
-        return false;
+        // if (obj instanceof Pajisja) {
+        // Pajisja p = (Pajisja) obj;
+        // if (p.getnumeriSerik() == numeriSerik) {
+        // return true;
+        // }
+        // }
+        // return false;
+        return obj instanceof Pajisja ? ((Pajisja) obj).getnumeriSerik().equals(numeriSerik) : false;
+
     }
 
 }

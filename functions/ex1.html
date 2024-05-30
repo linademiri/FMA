@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="allporfiles"></div>
+    <script>
+        let profiles = [
+
+            {
+                name: 'Ridvan Aliu',
+                age: 41,
+                bio: 'My bio with a lot'
+            },
+            {
+                name: 'Lina Demiri',
+                age: 19,
+                bio: 'My bio '
+            },
+            {
+                name: 'Filan Fisteku',
+                age: 101,
+                bio: 'My bio with'
+            }
+        ];
+
+        const allporfiles = document.querySelector('#allporfiles')
+
+        for (let i = 0; i <= profiles.length; i++) {
+            allporfiles.innerHTML += renderHTML(profiles[i].name, profiles[i].age, profiles[i].bio)
+        }
+        renderHTML();
+
+        function renderHTML(name, age, bio) {
+            let finalHTML = '';
+            finalHTML += `
+                <h1> ${name}</h1>
+            <h2>${age}</h2>
+            <p>${bio}</p>
+           <hr> `;
+            return finalHTML;
+        }
+
+    </script>
+</body>
+
+</html>
