@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Exercises</title>
+</head>
+
+<body>
+    <script>
+        function helloWorld() {
+            for (let i = 0; i < 10; i++)
+                console.log('hello world');
+        }
+        function name() {
+            let UserName = prompt('name?');
+            console.log(UserName)
+        }
+        function milesToKilometres() {
+            let UserMiles = parseFloat(prompt('miles?'));
+            let kilometres = UserMiles * 1.6;
+            console.log(kilometres);
+        }
+        function circleArea() {
+            let UserRadius = parseFloat(prompt('radius?'));
+            let area = UserRadius * UserRadius * Math.PI;
+            console.log(area);
+        }
+        function welcomeUser() {
+            let name = prompt('name?');
+            let surname = prompt('surname?');
+            console.log(`Welcome, ${name} ${surname}`);
+        }
+        function isWorkingCitizen() {
+            let UserAge = parseFloat(prompt('age?'));
+            if (UserAge >= 18 & UserAge <= 65) { console.log(`true`); }
+            else { console.log(`false`); }
+        }
+        function isEven() {
+            let UserNumber = parseFloat(prompt('number?'));
+            if (UserNumber % 2 == 0) { console.log(`true`); }
+            else { console.log(`false`); }
+
+        }
+        helloWorld();
+        name();
+        milesToKilometres();
+        circleArea();
+        welcomeUser();
+        isWorkingCitizen();
+        isEven();
+    </script>
+</body>
+
+</html>

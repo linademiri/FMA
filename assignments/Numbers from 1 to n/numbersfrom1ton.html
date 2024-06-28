@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers from 1 to n</title>
+</head>
+
+<body>
+    <script>
+        let number = parseInt(prompt('Type a positive integer between 1 and 100:'));
+
+        while (isNaN(number) || number < 1 || number > 100) {
+            number = parseInt(prompt('Please type a valid positive integer between 1 and 100:'));
+        }
+
+        let i = 1;
+        let numberString = "";
+
+        while (i <= number) {
+            numberString += i;
+            i++;
+            if (i <= number) {
+                numberString += ", ";
+            } else {
+                numberString += '.'
+            }
+        }
+
+        console.log(numberString);
+    </script>
+
+    </script>
+</body>
+
+</html>

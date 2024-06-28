@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closest Answer Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .winner {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .container {
+            background-color: black;
+            color: white;
+            padding: 1.5rem;
+            border-radius: 5%;
+        }
+
+        .player-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .player-one {
+            background-color: black;
+            padding: 2rem 4rem;
+            text-align: center;
+        }
+
+        .player-two {
+            background-color: black;
+            padding: 2rem 4rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="winner"></h1>
+        <div class="player-container">
+            <div class="player-one">
+            </div>
+            <div class="player-two">
+            </div>
+        </div>
+    </div>
+    <script>
+        let winner = document.querySelector('.winner')
+        let answer = Math.floor(Math.random() * 20) + 1;
+        let playerOne = parseInt(prompt('type a number?'));
+        let playerTwo = parseInt(prompt('type a number?'));
+        if (isNaN(playerOne) || isNaN(playerTwo)) {
+            throw new Error('please type a number.')
+        }
+        if ((playerOne < 0 || playerOne > 20) || (playerTwo < 0 || playerTwo > 20)) {
+            throw new Error('please type a number btw 1-20');
+        }
+        let playerOneDistance = Math.abs(answer - playerOne);
+        let playerTwoDistance = Math.abs(answer - playerTwo);
+
+        if (playerOneDistance < playerTwoDistance) {
+            winner.innerHTML = 'player one won'
+            colorOne = 'green'
+            colorTwo = 'red'
+        }
+        else if (playerOneDistance = playerTwoDistance) {
+            winner.innerHTML = 'tie'
+            colorOne = 'orange'
+            colorTwo = 'orange'
+        } else {
+            winner.innerHTML = 'player two won'
+            colorOne = 'red'
+            colorTwo = 'green'
+        }
+        let playerOneAnswer = document.querySelector('.player-one');
+        let playerTwoAnswer = document.querySelector('.player-two');
+        playerOneAnswer.innerHTML = ` <p>player one</p>
+                <h1>${playerOne}</h1>`;
+        playerTwoAnswer.innerHTML = ` <p>player two</p>
+                <h1>${playerTwo}</h1>`;
+        playerOneAnswer.style.backgroundColor = colorOne;
+        playerTwoAnswer.style.backgroundColor = colorTwo;
+        console.log(`${answer}`)
+    </script>
+</body>
+
+</html>

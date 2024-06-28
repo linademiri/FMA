@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of numbers</title>
+</head>
+
+<body>
+    <script>
+        let sum = 0;
+        let number;
+
+        number = parseInt(prompt('Type a positive number that you want to add (or type 0 to stop):'));
+
+        while (isNaN(number) || number < 0) {
+            number = parseInt(prompt('Please enter a valid positive number (or type 0 to stop):'));
+        }
+
+        while (number !== 0) {
+            sum += number;
+            number = parseInt(prompt('Type a positive number that you want to add (or type 0 to stop):'));
+            while (isNaN(number) || number < 0) {
+                number = parseInt(prompt('Please enter a valid positive number (or type 0 to stop):'));
+            }
+        }
+
+        console.log(`The sum of the numbers you wrote is: ${sum}`);
+    </script>
+
+    </script>
+</body>
+
+</html>

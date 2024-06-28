@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess until correct</title>
+</head>
+
+<body>
+    <script> let randomNum = Math.floor(Math.random() * 7);
+        console.log(randomNum)
+        let userNum;
+        let x = 0;
+
+        do {
+            userNum = parseInt(prompt('guess a number from 0 to 6?'));
+            x++;
+        }
+        while (userNum !== randomNum || isNaN(userNum));
+        if (x == 1) {
+            alert(`Congratulations, you guessed the correct number in ${x} try`);
+        }
+        alert(`Congratulations, you guessed the correct number in ${x} tries`);
+
+    </script>
+</body>
+
+</html>

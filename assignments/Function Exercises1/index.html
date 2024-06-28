@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Exercises</title>
+</head>
+
+<body>
+    <script>
+        const helloWorld = function () {
+            for (let i = 0; i < 10; i++)
+                console.log('hello world');
+        };
+
+        const name = function () {
+            let UserName = prompt('name?');
+            console.log(UserName);
+        };
+
+        const milesToKilometres = function () {
+            let UserMiles = parseFloat(prompt('miles?'));
+            let kilometres = UserMiles * 1.6;
+            console.log(kilometres);
+        };
+
+        const circleArea = function () {
+            let UserRadius = parseFloat(prompt('radius?'));
+            let area = UserRadius * UserRadius * Math.PI;
+            console.log(area);
+        };
+
+        const welcomeUser = function () {
+            let name = prompt('name?');
+            let surname = prompt('surname?');
+            console.log(`Welcome, ${name} ${surname}`);
+        };
+
+        const isWorkingCitizen = function () {
+            let UserAge = parseFloat(prompt('age?'));
+            if (UserAge >= 18 && UserAge <= 65) {
+                console.log('true');
+            } else {
+                console.log('false');
+            }
+        };
+
+        const isEvenArrow = () => {
+            let UserNumber = parseFloat(prompt('number?'));
+            if (UserNumber % 2 == 0) {
+                console.log('true');
+            } else {
+                console.log('false');
+            }
+        };
+
+        helloWorld();
+        name();
+        milesToKilometres();
+        circleArea();
+        welcomeUser();
+        isWorkingCitizen();
+        isEven();
+
+    </script>
+</body>
+
+</html>

@@ -18,6 +18,7 @@ let activeQuestion = 0;
 let points = 0;
 let lineTimer = 0;
 let timeCount;
+let nextQ = false;
 
 start_btn.addEventListener('click', function () {
     info_box.classList.add('activeInfo');
@@ -34,19 +35,21 @@ continue_btn.addEventListener('click', function () {
 });
 
 next_btn.addEventListener('click', function () {
-    next_btn.classList.remove('show');
-    if (activeQuestion == 4) {
-        next_btn.textContent = 'Finish';
-    }
+    if (nextQ) {
+        next_btn.classList.remove('show');
+        if (activeQuestion == 4) {
+            next_btn.textContent = 'Finish';
+        }
 
-    if (activeQuestion < questions.length - 1) {
-        activeQuestion++;
-        loadQuestions(activeQuestion);
-    }
-    else {
-        quiz_box.classList.remove('activeQuiz');
-        result_box.classList.add('activeResult');
-        score_text.textContent = points + ' / ' + questions.length;
+        if (activeQuestion < questions.length - 1) {
+            activeQuestion++;
+            loadQuestions(activeQuestion);
+        }
+        else {
+            quiz_box.classList.remove('activeQuiz');
+            result_box.classList.add('activeResult');
+            score_text.textContent = points + ' / ' + questions.length;
+        }
     }
 });
 
@@ -62,6 +65,7 @@ function startQuiz() {
         else {
             clearInterval(timeCount);
             disableQuestions(activeQuestion);
+            nextQ = true;
         }
     }, 1000);
 }
@@ -69,6 +73,8 @@ function startQuiz() {
 function loadQuestions(q) {
     reset();
     startQuiz();
+    nextQ = false;
+
 
     let allOptions = questions[q].options;
     que_text.textContent = questions[q].question;
@@ -86,6 +92,7 @@ function loadQuestions(q) {
 
 function checkAnswer(q, o, opt) {
     clearInterval(timeCount);
+    nextQ = true;
     next_btn.classList.add('show');
 
     for (let i = 0; i < questions[q].options.length; i++) {

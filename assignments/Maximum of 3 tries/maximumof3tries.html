@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximum of 3 tries</title>
+</head>
+
+<body>
+    <script>
+        let password;
+        let i = 4;
+        do {
+            i--;
+            password = parseInt(prompt(`Write your password?(${i} tries left)`));
+        }
+        while (password != '12345678' && i != 1);
+        if (password == '12345678') {
+            alert('correct');
+        }
+        else { alert("you can't try anymore"); }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String and Time Manipulation</title>
+</head>
+
+<body>
+    <script>
+        const str = '     hello, dolly! ';
+        const firstLetter = str.trim().charAt(0).toUpperCase();
+        console.log(firstLetter);
+
+        const timeStr = '05:36 PM';
+        const [time, period] = timeStr.split(' ');
+        const [hours, minutes] = time.split(':').map(Number);
+        console.log(hours);
+        console.log(minutes);
+        console.log(period);
+
+        const tempStr = "New York, 15°C";
+        const [city, temp] = tempStr.split(', ');
+        const temperature = parseFloat(temp);
+        console.log(city);
+        console.log(temperature);
+
+        const tempStr2 = "Ottawa, -4°C";
+        const [city2, temp2] = tempStr2.split(', ');
+        const temperature2 = parseFloat(temp2);
+        console.log(city2);
+        console.log(temperature2);
+
+        const tempStr3 = "Prishtina, 50°F";
+        const [city3, temp3] = tempStr3.split(', ');
+        const temperature3 = parseFloat(temp3);
+        console.log(city3);
+        console.log(temperature3);
+    </script>
+</body>
+
+</html>
