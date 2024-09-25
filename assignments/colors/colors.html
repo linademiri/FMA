@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+</head>
+
+<body>
+    <script>
+        document.body.style.background = "red";
+        let colors = [
+            '#123', '#345', '#247', '#248'
+        ];
+        let i = 0;
+        let change = () => {
+            document.body.style.background = colors[i];
+            if (i == (colors.length - 1)) i = 0;
+            i++
+        }
+        setInterval(change, 2000);
+
+    </script>
+</body>
+
+</html>

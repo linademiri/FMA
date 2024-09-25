@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    function displayGames() {
+        const gameList = document.getElementById("gameList");
+        gameList.innerHTML = ''; // Clear the list first
+
+        allGames.forEach((game, index) => {
+            gameList.innerHTML += `
+            <h1>${game.name}</h1>
+            <p>${game.desc}</p>
+            <p>Views: ${game.views}</p>
+            <p>Likes: ${game.likes}</p>
+            <p>Rating: ${game.rating}</p>
+            <p><a href="#" onclick="removeGame(${index})">Remove</a></p>
+            <button onclick="editGame(${index})">Edit</button>
+        
+        `;
+        });
+    }
+
+    function removeGame(index) {
+        allGames.splice(index, 1); // Remove the game at the selected index
+        displayGames(); // Re-render the updated game list
+    }
+
+    function editGame(index) {
+        const gameList = document.getElementById("gameList");
+        const li = gameList.children[index];
+
+        const game = allGames[index];
+
+        gameList.innerHTML = `
+        <input type="text" value="${game.name}" id="editName${index}">
+        <textarea id="editDesc${index}">${game.desc}</textarea> <br>
+        <input type="number" value="${game.views}" id="editViews${index}">
+       <input type="number" value="${game.likes}" id="editLikes${index}">
+       <input type="number" value="${game.rating}" id="editRating${index}">
+        <button onclick="saveGame(${index})">Save</button>
+        <button onclick="displayGames()">Cancel</button>
+    `;
+    }
+
+    function saveGame(index) {
+        // Retrieve the new values
+        const updatedName = document.getElementById(`editName${index}`).value;
+        const updatedDesc = document.getElementById(`editDesc${index}`).value;
+        const updatedViews = parseInt(document.getElementById(`editViews${index}`).value);
+        const updatedLikes = parseInt(document.getElementById(`editLikes${index}`).value);
+        const updatedRating = parseFloat(document.getElementById(`editRating${index}`).value);
+
+        // Update the allGames array
+        allGames[index] = {
+            name: updatedName,
+            desc: updatedDesc,
+            views: updatedViews,
+            likes: updatedLikes,
+            rating: updatedRating
+        };
+
+        // Re-display the updated games
+        displayGames();
+    }
+    AddGameBtn.addEventListener("click", add);
+    function add() {
+        let newG = {
+            name: gameName.value,
+            desc: gameDscp.value,
+            views: getviews.value,
+            likes: getlikes.value,
+            rating: getrating.value
+        }
+        allGames.push(newG);
+        displayGames();
+        clearInputs();
+    }
+    // Initial rendering of the game list
+    displayGames();
+</script>
