@@ -50,7 +50,7 @@ let editUrl = document.getElementById("edit-url");
 let editLikes = document.getElementById("edit-likes");
 let editViews = document.getElementById("edit-views");
 
-function openEditModal(index== null) {
+function openEditModal(index = null) {
 
 }
 
