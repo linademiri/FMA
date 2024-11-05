@@ -1,0 +1,21 @@
+.dFlex {
+
+    border: 1px solid palevioletred;
+    width: 150px;
+
+    padding: 50px;
+}
+
+img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
