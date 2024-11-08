@@ -1,0 +1,125 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.dFlex {
+    display: flex;
+
+}
+
+.dGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.jContent {
+    justify-content: space-between;
+}
+
+.jSpace {
+    justify-content: space-between;
+}
+
+.imgW {
+    width: 50px;
+    height: 50px;
+}
+
+.gap {
+    gap: 10px;
+}
+
+.gap50 {
+    gap: 130px;
+}
+
+.bgOrange {
+    background-color: rgb(216, 185, 127);
+}
+
+.colorOrange {
+    color: rgb(255, 72, 0);
+}
+
+.marginTop {
+    margin-top: 20px;
+}
+
+.margin20 {
+    margin: 20px;
+}
+
+.flex {
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.bgColorOr {
+    background-color: orange;
+    width: 20px;
+    height: 20px;
+}
+
+.bgColorW {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+}
+
+.bgColor {
+    background-color: orange;
+    width: 70px;
+    height: 20px;
+}
+
+.bgImage {
+    background-image: url(./hero.jpg);
+    background-color: rgba(237, 245, 220, 0.288);
+    background-blend-mode: color;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+}
+
+.padding {
+    padding: 10px 200px
+}
+
+.padding10 {
+    padding: 8px 5px;
+}
+
+.padding15 {
+    padding: 15px;
+}
+
+.bgWhite {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+}
+
+.gap20 {
+    gap: 5px;
+}
+
+.img300 {
+    height: 300px;
+    width: 300px;
+}
+
+.logo {
+    width: 40px;
+}
+
+.fSize {
+    font-size: 20px;
+}
