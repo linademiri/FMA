@@ -1,0 +1,1 @@
+let lina = document.write("lina")
