@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="myDiv">
+        <p id="para1">Ky është paragrafi i parë.</p>
+        <p id="para2">Ky është paragrafi i dytë.</p>
+    </div>
+    <button onclick="removeParagraph()">Fshi Paragrafin e Parë</button>
+
+    <script>
+        function removeParagraph() {
+            const div = document.getElementById("myDiv");
+            const paragraphToRemove = document.getElementById("para1");
+            if (paragraphToRemove) {
+                div.removeChild(paragraphToRemove);
+            } else {
+                alert("Paragrafi tashmë është fshirë!");
+            }
+        }
+    </script>
+</body>
+
+</html>

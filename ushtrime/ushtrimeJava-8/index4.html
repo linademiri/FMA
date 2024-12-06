@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Renditja e Listës</h1>
+    <ul id="myList">
+        <li>Artikulli 1</li>
+        <li>Artikulli 2</li>
+        <li>Artikulli 3</li>
+        <li>Artikulli 4</li>
+    </ul>
+    <br>
+    <button onclick="moveFirstToLast()">Zhvendos Artikullin e Parë</button>
+
+    <script>
+        function moveFirstToLast() {
+
+            const list = document.getElementById("myList");
+
+            const firstItem = list.firstElementChild;
+
+            if (firstItem) {
+                list.appendChild(firstItem);
+            }
+        }
+    </script>
+</body>
+
+</html>
