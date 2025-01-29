@@ -1,0 +1,31 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.Card {
+    /* Size */
+    height: 200px;
+    /* Alignment */
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 100%;
+    gap: 0.5rem;
+    /* Styling */
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px #aeaeaed8;
+    padding: 1rem;
+}
+
+.Card-image {
+    object-fit: contain;
+}
+
+.Card-Header {
+    margin-top: 0;
+}
+
+.Card-SubHeader {
+    margin-top: 0;
+    color: gray;
+}
